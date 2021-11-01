@@ -77,9 +77,20 @@ political_decisions = {
 		}
 	}	
 	
+	enable_debug_decision = {
+		potential = {
+			ai = no
+			has_global_flag = looking_through_options
+			NOT = { has_country_flag = enable_debug_decision }
+			NOT = { year = 1837 }
+		}
+		
+		allow = { }
+		
+		effect = { set_country_flag = enable_debug_decision }
+	}
+
 	test_dec = {
-		picture = starting_options
-		alert = no
 		potential = {
 			ai = no
 			has_country_flag = enable_debug_decision
@@ -92,6 +103,27 @@ political_decisions = {
 			#QNG = { change_tag = QNG }
 			FRA = { change_tag = FRA }
 			set_country_flag = test_dec
+		}
+	}
+	
+	disable_microstates = {
+		potential = {
+			ai = no
+			has_global_flag = looking_through_options
+			NOT = { has_global_flag = disable_microstates }
+			NOT = { year = 1837 }
+		}
+		allow = { }
+		effect = {
+			set_global_flag = disable_microstates
+			3251 = { remove_core = MNC add_core = SAR add_core = ITA }
+			SAR = { inherit = MNC }
+			3252 = { remove_core = ADO remove_core = CAT add_core = FRA }
+			FRA = { inherit = ADO }
+			3253 = { remove_core = LIE add_core = AUS }
+			AUS = { inherit = LIE }
+			3266 = { remove_core = SMR add_core = PAP add_core = ITA }
+			PAP = { inherit = SMR }
 		}
 	}
 	
@@ -129,24 +161,6 @@ political_decisions = {
 					alliance_with = ENG
 					exists = yes
 				}
-			}
-			OR = {
-				NOT = {
-					# There's a critical time period...
-					AND = {
-						# ...after crises are unlocked...
-						has_global_flag = revolution_n_counter_researched
-
-						# ...but before Great Wars are enabled...
-						NOT = { has_global_flag = great_wars_enabled }
-					}
-
-					# ...where the UK might be involved in a crisis war---in which case no ally
-					# may join. This time period implies...
-				}
-
-				# ...that a call to arms may not be issued if one was already performed recently.
-				NOT = { has_country_modifier = cch.recent-call-to-arms }
 			}
 		}
 		
@@ -201,16 +215,10 @@ political_decisions = {
 		}
 		
 		effect = {
-			add_country_modifier = {
-				name = cch.recent-call-to-arms
-				duration = 30
-			}
-
-			# Audax Validator "." Ignore_NEXT
-			war = {
-				attacker_goal = { casus_belli = call_allies_cb }
-				call_ally = yes
-			}
+			   war = {               #No target initiates a one-day war that automatically resolves in a WP, but call_ally causes the new ally 
+				   attacker_goal = {  casus_belli = call_allies_cb  }
+				   call_ally = yes
+			   }
 		}
 	}
 	
@@ -219,7 +227,7 @@ political_decisions = {
 			capital_scope = { continent = europe }
 			is_greater_power = yes
 			has_global_flag = tangier_protocol_succeeded
-			NOT = { AND = { primary_culture = french capital = 425 } }
+			NOT = { primary_culture = french }
 			NOT = { tag = SPA }
 			NOT = { tag = IBR }
 			NOT = { tag = SPC }
@@ -330,6 +338,75 @@ political_decisions = {
 				prestige = 200
 			}
 			set_country_flag = cleanup_colonial_infamy
+		}
+	}
+	
+	cleanup_war_with_non_existing_country = {
+		potential = {
+			ai = yes
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			#NOT = { has_country_flag = cleanup_colonial_infamy }
+		}
+		
+		allow = {
+			war = yes
+			OR = {
+				TOU = { exists = no war_with = THIS }
+				ASH = { exists = no war_with = THIS }
+				MAS = { exists = no war_with = THIS }
+				SEG = { exists = no war_with = THIS }
+				TRZ = { exists = no war_with = THIS }
+				WOL = { exists = no war_with = THIS }
+				JAL = { exists = no war_with = THIS }
+				GBU = { exists = no war_with = THIS }
+				SOK = { exists = no war_with = THIS }
+				DAH = { exists = no war_with = THIS }
+				OYO = { exists = no war_with = THIS }
+				ARO = { exists = no war_with = THIS }
+				KBO = { exists = no war_with = THIS }
+				DND = { exists = no war_with = THIS }
+				DAM = { exists = no war_with = THIS }
+				MOS = { exists = no war_with = THIS }
+				LOA = { exists = no war_with = THIS }
+				KON = { exists = no war_with = THIS }
+				KNG = { exists = no war_with = THIS }
+				
+			}
+		}
+		
+		effect = {
+			any_country = {
+				limit = {
+					OR = {
+							tag = TOU 
+							tag = ASH 
+							tag = MAS 
+							tag = SEG 
+							tag = TRZ 
+							tag = WOL 
+							tag = JAL 
+							tag = GBU 
+							tag = SOK 
+							tag = DAH 
+							tag = OYO 
+							tag = ARO 
+							tag = KBO 
+							tag = DND 
+							tag = DAM 
+							tag = MOS 
+							tag = LOA 
+							tag = KON 
+							tag = KNG 
+					}
+					exists = no
+					war_with = THIS
+				}
+				end_war = THIS
+			}
+			#set_country_flag = cleanup_colonial_infamy
 		}
 	}
 	
@@ -1087,10 +1164,7 @@ political_decisions = {
 					is_vassal = yes
 				}
 			}
-			NOT = {
-                has_country_flag = civilize_ai_countries
-                has_country_modifier = colony_to_be_annexed
-            }
+			NOT = { has_country_flag = civilize_ai_countries }
 		}
 		
 		allow = {

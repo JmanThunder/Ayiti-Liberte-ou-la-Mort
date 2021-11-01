@@ -913,39 +913,39 @@ political_decisions = {
 
 			define_general = {
 				name = "Robert E. Lee"
-				personality = unit_personality
-				background = audaciousxwar_college
+				personality = audacious
+				background = war_college
 			}
 
 			define_general = {
 				name = "Thomas Jackson"
-				personality = unit_personality
-				background = coolmindedxschool_of_defense
+				personality = coolminded
+				background = school_of_defense
 			}
 			define_general = {
 				name = "J.E.B. Stuart"
-				personality = unit_personality
-				background = brilliantxaristocrat
+				personality = brilliant
+				background = aristocrat
 			}
 			define_general = {
 				name = "James Longstreet"
-				personality = unit_personality
-				background = efficientxarmchair_general
+				personality = efficient
+				background = armchair_general
 			}
 			define_general = {
 				name = "Pierre Beauregard"
-				personality = unit_personality
-				background = expertxgifted_administrator
+				personality = expert
+				background = gifted_administrator
 			}
 			define_admiral = {
 				name = "Franklin Buchanan"
-				personality = unit_personality
-				background = balanced_pxnationalist
+				personality = balanced_p
+				background = nationalist
 			}
 			define_admiral = {
 				name = "Catesby ap Roger Jones"
-				personality = unit_personality
-				background = skilledxrising_star
+				personality = skilled
+				background = rising_star
 			}
 			
 			small_arms = 100
@@ -1820,7 +1820,7 @@ political_decisions = {
 			43 = { change_province_name = "Dallas" life_rating = 5 }
 			134 = { change_province_name = "Abilene" }
 			135 = { change_province_name = "Lubbock" }
-			92 = { change_province_name = "Coeur d'Alene" }
+			92 = { change_province_name = "Coeur D'Alene" }
 			93 = { change_province_name = "Pocatello" }
 			111 = { change_province_name = "Rock Springs" }
 			130 = { change_province_name = "Tahlequah" }

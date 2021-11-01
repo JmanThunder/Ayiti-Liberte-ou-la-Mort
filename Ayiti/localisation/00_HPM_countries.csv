@@ -237,8 +237,8 @@ FRO_anarcho_liberal;Vinnuflokkurin;;;;;;;;;;;;;;;;;;;;;;;;;;X,,,,,,,,,,,,,,,,
 FRO_communist;Kommunistiski Flokkur F¯roya;;;;;;;;;;;;;;;;;;;;;;;;;;X,,,,,,,,,,,,,,,,
 FRO_fascist;Loysingarflokkurin;;;;;;;;;;;;;;;;;;;;;;;;;;X,,,,,,,,,,,,,,,,
 RUS_proletarian_dictatorship;The Soviet Union;;;;;;;;;;;;;;;;;;;x
-NCT;Neuch‚tel;;;;;;;;;;;;;;;;;;;;;;x;;;;
-NCT_ADJ;Neuch‚telois;;;;;;;;;;;;;;;;;;;;;;x;;;;
+NCT;Neuchatel;;;;;;;;;;;;;;;;;;;;;;x;;;;
+NCT_ADJ;Neuchateli;;;;;;;;;;;;;;;;;;;;;;x;;;;
 UBD;The United Baltic Provinces;;;;;;;;;;;;;;;;;;;;;;x;;;;
 UBD_democracy;The Baltic Union;;;;;;;;;;;;;;;;;;;;;;x;;;;
 UBD_proletarian_dictatorship;The Baltic Worker's Union;;;;;;;;;;;;;;;;;;;;;;x;;;;
@@ -523,12 +523,12 @@ FRA_reactionary_2;Droite Nationaliste;;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 FRA_anarcho_liberal;RÈpublicain Radical;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 GER_fascist;NSDAP;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 POL_fascist;ONR-Falanga;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-HAI_conservative;Parti national;;;;;;;;;;;;;;;;;;;x;;;;
-HAI_liberal;Parti libÈral;;;;;;;;;;;;;;;;;;;x;;;;
-HAI_reactionary;Parti nationaliste haÔtien;;;;;;;;;;;;;;;;;;;x;;;;
-HAI_anarcho_liberal;Parti radical;;;;;;;;;;;;;;;;;;;;x;;;;
-HAI_socialist;Parti socialiste;;;;;;;;;;;;;;;;;;;;;;;;;x;;;
-HAI_communist;Parti communiste haÔtien;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+HAI_conservative;Parti National;;;;;;;;;;;;;;;;;;;x;;;;
+HAI_liberal;Parti Liberal;;;;;;;;;;;;;;;;;;;x;;;;
+HAI_reactionary;Haitien Nationaliste Parti;;;;;;;;;;;;;;;;;;;x;;;;
+HAI_anarcho_liberal;Parti Radical;;;;;;;;;;;;;;;;;;;;x;;;;
+HAI_socialist;Parti Socialiste;;;;;;;;;;;;;;;;;;;;;;;;;x;;;
+HAI_communist;Parti Communiste Haitien;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 HAI_fascist;Parti Fasciste;;;;;;;;;;;;;;;;;;;;x;;;;
 CHK;Champassak;Champassak;Champassak;Champasak;Champasak;Champassak;Champassak;Champassak;;;;;;x;
 CHK_ADJ;Champassaki;champassak;Champassaki;Champasak;Champassak;Champassaki;Champassakijsk˝;;;;;;x;
@@ -1097,7 +1097,7 @@ FIU_ADJ;Fiumani;Fiumani;Fiumani;;;;;;;;;;;x
 FIU_fascist_dictatorship;Carnaro;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 FIU_bourgeois_dictatorship;Carnaro;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 FIU_presidential_dictatorship;Carnaro;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-FIU_democracy;Free State of Fiume;…tat libre de Fiume;Freistaat Fiume;;;;;;;;;;;x
+FIU_democracy;Free State of Fiume;êtat libre de Fiume;Freistaat Fiume;;;;;;;;;;;x
 FIU_liberal;Partito Liberale;Partito Liberale;Partito Liberale;;;;;;;;;;;x
 FIU_conservative;Partito Autonomo;Partito Autonomo;Partito Autonomo;;;;;;;;;;;x
 FIU_reactionary;Nazionalisti;Nazionalisti;Nazionalisti;;;;;;;;;;;x
@@ -2762,8 +2762,16 @@ ASH_anarcho_liberal;Progress Party;;;;;;;;;;;;x;;;;;;;;;;;;;;
 ASH_socialist;Ghana Congress Party;;;;;;;;;;;;x;;;;;;;;;;;;;;
 ASH_communist;Convention People's Party;;;;;;;;;;;;x;;;;;;;;;;;;;;
 ASH_fascist;Popular Front Party;;;;;;;;;;;;x;;;;;;;;;;;;;;
-GHN;Ghana;Ghana;Ghana;;Ghana;;;;;;;;;
-GHN_ADJ;Ghanaian;Ghanaian;Ghanaisch;;GhanÈs;;;;;;;;;
+ASH_proletarian_dictatorship;Ghana;Ghana;Ghana;;Ghana;;;;;;;;;x;;;;;;;;;;;;;;
+ASH_proletarian_dictatorship_ADJ;Ghanaian;Ghanaian;Ghanaisch;;GhanÈs;;;;;;;;;x
+ASH_fascist_dictatorship;Ghana;Ghana;Ghana;;Ghana;;;;;;;;;x;;;;;;;;;;;;;;
+ASH_fascist_dictatorship_ADJ;Ghanaian;Ghanaian;Ghanaisch;;GhanÈs;;;;;;;;;x
+ASH_bourgeois_dictatorship;Ghana;Ghana;Ghana;;Ghana;;;;;;;;;x;;;;;;;;;;;;;;
+ASH_bourgeois_dictatorship_ADJ;Ghanaian;Ghanaian;Ghanaisch;;GhanÈs;;;;;;;;;x
+ASH_presidential_dictatorship;Ghana;Ghana;Ghana;;Ghana;;;;;;;;;x;;;;;;;;;;;;;;
+ASH_presidential_dictatorship_ADJ;Ghanaian;Ghanaian;Ghanaisch;;GhanÈs;;;;;;;;;x
+ASH_democracy;Ghana;Ghana;Ghana;;Ghana;;;;;;;;;x;;;;;;;;;;;;;;
+ASH_democracy_ADJ;Ghanaian;Ghanaian;Ghanaisch;;GhanÈs;;;;;;;;;x
 AZA;Azande;Azande;Azande;;Azande;;;;;;;;;;x;;;;;;;;;;;;;;
 AZA_ADJ;Zande;Zande;Zande;;;;;;;;;;;;x;;;;;;;;;;;;;;
 AZA_conservative;Royal Faction;Faction royale;Kˆnigsfraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
@@ -3172,7 +3180,7 @@ XHO_communist;Communist Faction;Faction communiste;Die kommunistische Fraktion;;
 XHO_fascist;Fascist Faction;Faction fasciste;Die faschistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 XHO_democracy;Xhosaland;;;;;;;;;;;;;;x
 AGC;Angoche;;;;;;;;;;;;x
-AGC_ADJ;Angochean;;;;;;;;;;;;;
+AGC_ADJ;Angochen;;;;;;;;;;;;x
 AGC_conservative;Sultan's Faction;;;;;;;;;;;;x
 AGC_liberal;Reform Faction;;;;;;;;;;;;x
 AGC_reactionary;Islamic faction;;;;;;;;;;;;x

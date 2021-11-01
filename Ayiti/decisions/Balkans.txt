@@ -696,10 +696,8 @@ political_decisions = {
 				tag = TUR
 			}
 			OR = {
-				AND = {
-					primary_culture = french
-					capital = 425
-				}
+				primary_culture = french
+				tag = BOR
 				tag = RUS
 				any_owned_province = { is_core = ALB }
 				any_owned_province = { is_core = BUL }

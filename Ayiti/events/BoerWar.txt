@@ -126,11 +126,6 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = {
-		2112 = { change_province_name = "Ladysmith" secede_province = THIS  }
-		2111 = { change_province_name = "Pietermaritzburg" secede_province = THIS }
-	}
-	
 	option = {
 		name = "EVT98206OPTA"
 		prestige = 5
@@ -150,6 +145,8 @@ country_event = {
 			money = 250
 			move_pop = 2111
 		}
+		2112 = { change_province_name = "Ladysmith" secede_province = THIS  }
+		2111 = { change_province_name = "Pietermaritzburg" secede_province = THIS }
 		2111 = { state_scope = { change_region_name = "Natal" } }
 		ai_chance = { factor = 100 }
 	}
@@ -173,6 +170,8 @@ country_event = {
 			money = 250
 			move_pop = 2111
 		}
+		2112 = { change_province_name = "Ladysmith" secede_province = THIS }
+		2111 = { change_province_name = "Pietermaritzburg" secede_province = THIS }
 		2111 = {
 			state_scope = {
 				change_region_name = "Natal"
@@ -201,6 +200,8 @@ country_event = {
 			money = 250
 			move_pop = 2111
 		}
+		2112 = { change_province_name = "Ladysmith" secede_province = THIS }
+		2111 = { change_province_name = "Pietermaritzburg" secede_province = THIS }
 		2111 = { state_scope = { change_region_name = "Natal" is_slave = yes } }
 		change_tag_no_core_switch = NAL
 		ai_chance = { factor = 0 }
@@ -1445,10 +1446,7 @@ country_event = {
 	
 	trigger = {
 		is_greater_power = yes
-		NOT = {
-			has_country_flag = boer_accepted
-			has_country_flag = turned_down_the_witwatersrand_gold_rush
-		}
+		NOT = { has_country_flag = boer_accepted }
 		any_neighbor_country = {
 			OR = {
 				has_country_modifier = witwatersrand_gold_rush
@@ -1457,18 +1455,8 @@ country_event = {
 					2106 = { trade_goods = precious_metal }
 				}
 			}
-			NOT = {
-				vassal_of = THIS
-				in_sphere = THIS
-				war_with = THIS
-			}
+			part_of_sphere = no
 			is_greater_power = no
-			OR = {
-				part_of_sphere = no
-				sphere_owner = {
-					NOT = { war_with = THIS }
-				}
-			}
 		}
 	}
 	
@@ -1478,9 +1466,8 @@ country_event = {
 	
 	option = {
 		name = "EVT98235OPTA"
-		any_country = {
+		random_country = {
 			limit = {
-				exists = yes
 				OR = {
 					has_country_modifier = witwatersrand_gold_rush
 					AND = {
@@ -1488,12 +1475,8 @@ country_event = {
 						2106 = { trade_goods = precious_metal }
 					}
 				}
-				NOT = {
-					vassal_of = THIS
-					in_sphere = THIS
-					war_with = THIS
-				}
 				is_greater_power = no
+				is_vassal = no
 				part_of_sphere = no
 			}
 			add_casus_belli = {
@@ -1503,9 +1486,8 @@ country_event = {
 			}
 		}
 		
-		any_country = {
+		random_country = {
 			limit = {
-				exists = yes
 				OR = {
 					has_country_modifier = witwatersrand_gold_rush
 					AND = {
@@ -1513,12 +1495,8 @@ country_event = {
 						2106 = { trade_goods = precious_metal }
 					}
 				}
-				NOT = {
-					vassal_of = THIS
-					in_sphere = THIS
-					war_with = THIS
-				}
 				is_greater_power = no
+				is_vassal = no
 				part_of_sphere = yes
 			}
 			sphere_owner = {
@@ -1530,22 +1508,13 @@ country_event = {
 			}
 		}
 		
-		any_country = {
+		random_country = {
 			limit = { has_country_modifier = witwatersrand_gold_rush }
 			relation = {
 				who = THIS
 				value = -100
 			}
 			remove_country_modifier = witwatersrand_gold_rush
-		}
-	}
-
-	option = {
-		name = "EVT98235OPTB"
-		set_country_flag = turned_down_the_witwatersrand_gold_rush
-
-		ai_chance = {
-			factor = 0
 		}
 	}
 }
@@ -1939,96 +1908,42 @@ country_event = { #Oranje & Natalia can rally to Transvaal's side in Second Boer
 #      	    Friendly Great Powers Come to Boer Aid				#
 #																#
 #################################################################
+country_event = { #Rally to the Boer Cause?
+	id = 6060
+	title = "EVTNAME6060" 
+	desc = "EVTDESC6060"
+	picture = "boer_war"
 
-country_event = {
-    id      = 6060
-    title   = "EVTNAME6060" # Rally to the Boer Cause?
-    desc    = "EVTDESC6060"
-    picture = "boer_war"
+	is_triggered_only = yes
 
-    is_triggered_only = yes
+	option = {
+		name = "EVT6060OPTA" #Defend the Boer Cause
+		relation = {
+			who = TRN
+			value = 400
+		}
+		diplomatic_influence = { 
+			who = TRN 
+			value = 200 
+		}
+		create_alliance = TRN
+		TRN = {
+           war = {               #No target initiates a one-day war that automatically resolves in a WP, but call_ally causes the new ally 
+               attacker_goal = {
+                   casus_belli = humiliate
+               }
+               call_ally = yes
+           }
+           badboy = -6       #Add this in so that you don't have to eat the infamy from declaring a war with no CB fabricated already.
+       }
+		ai_chance = { factor = 10}
+	}
 
-    option = {
-        name = "EVT6060OPTA" # Defend the Boer Cause
-
-        TRN = {
-            # AI calls allies into war
-            random_owned = {
-                limit = { owner = { ai = yes } }
-
-                owner = {
-                    relation = {
-                        who = TRN
-                        value = 400
-                    }
-
-                    diplomatic_influence = {
-                        who = TRN
-                        value = 200
-                    }
-
-                    create_alliance = TRN
-
-                    war = {
-                        attacker_goal = {
-                            casus_belli = call_allies_cb
-                        }
-                        call_ally = yes
-                    }
-                }
-            }
-
-            # player is notified of new ally
-            random_owned = {
-                limit = { owner = { ai = no } }
-
-                owner = {
-                    country_event = 6061
-                }
-            }
-        }
-
-        ai_chance = { factor = 10 }
-    }
-
-    option = {
-        name = "EVT6060OPTB" # None of Our Concern
-
-        prestige = -5
-
-        ai_chance = { factor = 90 }
-    }
-}
-
-country_event = {
-    id      = 6061
-    title   = "EVT6061NAME" # Our New Ally
-    desc    = "EVT6061DESC"
-    picture = "boer_war"
-
-    is_triggered_only        = yes
-    allow_multiple_instances = yes
-
-    immediate = {
-        FROM = {
-            relation = {
-                who = THIS
-                value = 400
-            }
-
-            diplomatic_influence = {
-                who = THIS
-                value = 200
-            }
-
-            create_alliance = THIS
-        }
-    }
-
-    option = {
-        name = "EVT6061OPTA" # Fantastic news.
-    }
-
+	option = { #None of Our Concern
+		name = "EVT6060OPTB"
+		prestige = -5
+		ai_chance = { factor = 90 }
+	}
 }
 
 #################################################################

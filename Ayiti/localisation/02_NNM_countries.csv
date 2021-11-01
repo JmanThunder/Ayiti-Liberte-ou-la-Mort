@@ -489,7 +489,7 @@ FIU_ADJ;Fiumani;Fiumani;Fiumani;;;;;;;;;;;x
 FIU_fascist_dictatorship;Italian Regency of Carnaro;RÇgence italienne du Carnaro;Italienische Regentschaft am Quarnero;;;;;;;;;;;x
 FIU_bourgeois_dictatorship;Italian Regency of Carnaro;RÇgence italienne du Carnaro;Italienische Regentschaft am Quarnero;;;;;;;;;;;x
 FIU_presidential_dictatorship;Italian Regency of Carnaro;RÇgence italienne du Carnaro;Italienische Regentschaft am Quarnero;;;;;;;;;;;x
-FIU_democracy;Free State of Fiume;…tat libre de Fiume;Freistaat Fiume;;;;;;;;;;;x
+FIU_democracy;Free State of Fiume;êtat libre de Fiume;Freistaat Fiume;;;;;;;;;;;x
 FIU_liberal;Partito Liberale;Partito Liberale;Partito Liberale;;;;;;;;;;;x
 FIU_conservative;Partito Autonomo;Partito Autonomo;Partito Autonomo;;;;;;;;;;;x
 FIU_reactionary;Nazionalisti;Nazionalisti;Nazionalisti;;;;;;;;;;;x
@@ -1928,6 +1928,15 @@ ARO_presidential_dictatorship;Biafra;Biafra;Biafra;;Biafra;;;;;;;;;x;;;;;;;;;;;;
 ARO_presidential_dictatorship_ADJ;Biafran;Biafraise;Biafran;;biafreÒo;;;;;;;;;x
 ARO_democracy;Biafra;Biafra;Biafra;;Biafra;;;;;;;;;x;;;;;;;;;;;;;;
 ARO_democracy_ADJ;Biafran;Biafraise;Biafran;;biafreÒo;;;;;;;;;x
+ASH;Ashanti;Ashanti;Aschanti;;Asantia;;;;;;;;;;x;;;;;;;;;;;;;;
+ASH_ADJ;Ashanti;Ashanti;Aschanti;;;;;;;;;;;;x;;;;;;;;;;;;;;
+ASH_conservative;Royal Faction;Faction royale;Kˆnigsfraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+ASH_liberal;Reform Faction;Faction de rÈforme;Verbesserung Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+ASH_reactionary;Empire Faction;Faction d'empire;Reich Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+ASH_anarcho_liberal;Radical Faction;Faction radicale;Die radikale Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+ASH_socialist;Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+ASH_communist;Communist Faction;Faction communiste;Die kommunistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
+ASH_fascist;Fascist Faction;Faction fasciste;Die faschistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 ASH_proletarian_dictatorship;Ghana;Ghana;Ghana;;Ghana;;;;;;;;;x;;;;;;;;;;;;;;
 ASH_proletarian_dictatorship_ADJ;Ghanaian;Ghanaian;Ghanaisch;;GhanÈs;;;;;;;;;x
 ASH_fascist_dictatorship;Ghana;Ghana;Ghana;;Ghana;;;;;;;;;x;;;;;;;;;;;;;;
@@ -2306,6 +2315,15 @@ XHO_socialist;Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;
 XHO_communist;Communist Faction;Faction communiste;Die kommunistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 XHO_fascist;Fascist Faction;Faction fasciste;Die faschistische Fraktion;;;;;;;;;;;;x;;;;;;;;;;;;;;
 XHO_democracy;Xhosaland;;;;;;;;;;;;;;x
+AGC;Angoche;;;;;;;;;;;;x
+AGC_ADJ;Angochen;;;;;;;;;;;;x
+AGC_conservative;Sultan's Faction;;;;;;;;;;;;x
+AGC_liberal;Reform Faction;;;;;;;;;;;;x
+AGC_reactionary;Islamic faction;;;;;;;;;;;;x
+AGC_anarcho_liberal;Radical Faction;;;;;;;;;;;;x
+AGC_socialist;Socialist Party;;;;;;;;;;;;x
+AGC_communist;Communist Party;;;;;;;;;;;;x
+AGC_fascist;Fascist Faction;;;;;;;;;;;;x
 GAZ;Gaza;;;;;;;;;;;;x
 GAZ_ADJ;Nguni;;;;;;;;;;;;x
 GAZ_conservative;King's Faction;;;;;;;;;;;;x

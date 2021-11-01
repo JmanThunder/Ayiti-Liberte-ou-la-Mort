@@ -1588,7 +1588,7 @@ gold_rush = {
 }
 
 witwatersrand_gold_rush = {
-	global_immigrant_attract = 0.5
+	immigrant_attract = 8
 	#assimilation_rate = 1
 	prestige = 0.01
 	icon = 11

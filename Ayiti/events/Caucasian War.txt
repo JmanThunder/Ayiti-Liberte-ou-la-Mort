@@ -281,8 +281,8 @@ country_event = {
 		DAG = { 
 			define_general = {
 				name = "Imam Shamil"
-				personality = unit_personality
-				background = implacablexschool_of_defense
+				background = school_of_defense
+				personality = implacable
 			}
 			any_owned = { remove_province_modifier = highlander_raids }
 			any_pop = {

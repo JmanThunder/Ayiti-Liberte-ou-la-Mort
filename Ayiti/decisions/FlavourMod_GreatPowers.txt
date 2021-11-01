@@ -52,4 +52,54 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	restore_republic_south_america = {
+		picture = "switch_to_liberty"
+		potential = {
+			OR = {
+				AND = {
+					capital_scope = { continent = south_america }	
+					is_greater_power = no
+					civilized = yes
+					OR = {
+						government = hms_government
+						government = democracy
+					}
+				}
+			}
+			war = no
+			is_substate = no
+			is_vassal = no
+		}
+		
+		allow = {
+			any_neighbor_country = { 
+				government = proletarian_dictatorship 	
+				is_vassal = no
+				NOT = { truce_with = THIS }
+			}
+			OR = {
+				government = hms_government
+				government = democracy
+			}
+		}
+		
+		effect = {
+			any_neighbor_country = {
+				limit = {
+					capital_scope = { continent = south_america }
+					exists = yes
+					government = proletarian_dictatorship
+					war = no
+				}
+				country_event = 99956
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
 }
