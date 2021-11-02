@@ -1510,7 +1510,7 @@ assimilation_chance = {
 				is_state_religion = no
 			}
 		}
-		#country = { has_country_flag = new_world_nation }
+		country = { has_country_flag = new_world_nation }
 		OR = {
 			location = { continent = north_america }
 			location = { continent = south_america }
@@ -1652,10 +1652,10 @@ assimilation_chance = {
 		}
 	}
 	
-	#modifier = {
-	#	factor = -1
-	#	is_accepted_culture = yes
-	#}
+	modifier = {
+		factor = -1
+		is_accepted_culture = yes
+	}
 	
 	modifier = {
 		factor = 1.0
