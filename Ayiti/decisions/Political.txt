@@ -42,6 +42,7 @@ political_decisions = {
 			}		
 		}
 	}
+	
 	abolish_prohibition = {
 		picture = abolish_prohibition
 		potential = {
@@ -83,6 +84,7 @@ political_decisions = {
 		
 		effect = {
 			treasury = -1000
+			set_country_flag = central_bank_instituted
 			add_country_modifier = {
 				name = central_bank_established
 				duration = -1
@@ -151,7 +153,13 @@ political_decisions = {
 		picture = sign_the_geneva_convention
 		potential = {
 			part_of_sphere = yes
-			is_vassal = no
+			OR = {
+				is_vassal = no
+				AND = {
+					ai = yes
+					has_country_flag = failed_unification_remove_from_sphere
+				}
+			}
 		}
 		
 		allow = {
@@ -166,11 +174,25 @@ political_decisions = {
 						}
 					}
 				}
+				AND = {
+					ai = yes
+					has_country_flag = failed_unification_remove_from_sphere
+				}
 			}
 		}
 		
 		effect = {
-			sphere_owner = { country_event = 13202 }
+			random_owned = {
+				limit = { owner = { NOT = { has_country_flag = failed_unification_remove_from_sphere } } }
+				owner = { sphere_owner = { country_event = 13202 } }
+			}
+			random_owned = {
+				limit = { owner = { has_country_flag = failed_unification_remove_from_sphere } }
+				owner = {
+					clr_country_flag = failed_unification_remove_from_sphere
+					sphere_owner = { diplomatic_influence = { who = THIS value = -200 } }
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -179,7 +201,10 @@ political_decisions = {
 			# Ai will do, if sphere owner has LESS than thrice our brigades.
 			modifier = {
 				factor = 0
-				NOT = { total_pops = 50000000 }
+				NOT = {
+					total_pops = 50000000
+					has_country_flag = failed_unification_remove_from_sphere
+				}
 				sphere_owner = {
 					# Factor = (sphere_owner regiments) / (our regiments).
 					# Returns true if( factor >= x ).
@@ -196,6 +221,7 @@ political_decisions = {
 		potential = {
 			can_nationalize = yes
 			civilized = yes
+			NOT = { has_country_modifier = nationalization_in_progress }
 		}
 		
 		allow = {
@@ -244,6 +270,7 @@ political_decisions = {
 		}
 		
 		effect = {
+			add_country_modifier = { name = nationalization_in_progress duration = 365 }
 			nationalize = yes
 		}
 		
@@ -339,164 +366,14 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	genocide_minorities = {
-		picture = genocide_minorities
-		potential = {
-			NOT = { has_country_flag = preparations_to_kill }
-			OR = {
-				government = absolute_monarchy
-				government = theocracy
-				government = fascist_dictatorship
-				government = presidential_dictatorship
-				government = proletarian_dictatorship
-			}
-			revolution_n_counterrevolution = 1
-		}
-		
-		allow = {
-			war = no
-			NOT = { any_owned_province = { has_province_modifier = genocide } }
-			invention = rhetoric_of_hate
-			money = 100000
-			OR = {
-				government = absolute_monarchy
-				government = theocracy
-				government = fascist_dictatorship
-				government = presidential_dictatorship
-				government = proletarian_dictatorship
-			}
-			OR = {
-				ruling_party_ideology = reactionary
-				ruling_party_ideology = fascist
-				ruling_party_ideology = communist
-			}
-		}
-		
-		effect = {
-			add_tax_relative_income = -0.1
-			plurality = -50
-			set_country_flag = preparations_to_kill
-			random_owned = { limit = { owner = { has_country_modifier = signed_the_geneva_convention  } } owner = { badboy = 3 } }
-			any_owned = { limit = { has_province_modifier = national_assimilation } owner = { country_event = 2611 } }
-			random_list = {
-				33 = { add_country_modifier = { name = preparations_to_kill duration = 365 } }
-				33 = { add_country_modifier = { name = preparations_to_kill duration = 548 } }
-				33 = { add_country_modifier = { name = preparations_to_kill duration = 730 } }
-			}
-			any_owned = {
-				remove_province_modifier = core_integration
-				remove_province_modifier = national_assimilation
-				remove_province_modifier = national_assimilation_acceptance
-			}
-			clr_country_flag = everywhere_genocide_only
-			clr_country_flag = non_colonial_genocide_only
-			clr_country_flag = colonial_genocide_only
-			
-			any_pop = {
-				scaled_militancy = { ideology = socialist factor = 7 }
-				scaled_militancy = { ideology = liberal factor = 7 }
-				scaled_militancy = { ideology = anarcho_liberal factor = 7 }
-				scaled_militancy = { ideology = conservative factor = 7 }
-			}
-			
-			any_pop = {
-				limit = { is_primary_culture = no is_accepted_culture = no }
-				militancy = 3
-				consciousness = 5
-			}
-			
-			any_pop = {
-				limit = { agree_with_ruling_party = 0.70 }
-				militancy = -7
-			}
-			
-			random_owned = {
-				limit = { owner = { ruling_party_ideology = fascist } }
-				owner = {
-					any_pop = {
-						scaled_militancy = { ideology = communist factor = 7 }
-						scaled_militancy = { ideology = reactionary factor = 5 }
-					}
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { ruling_party_ideology = communist } }
-				owner = {
-					any_pop = {
-						scaled_militancy = { ideology = fascist factor = 7 }
-						scaled_militancy = { ideology = reactionary factor = 7 }
-					}
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { ruling_party_ideology = reactionary } }
-				owner = {
-					any_pop = {
-						scaled_militancy = { ideology = communist factor = 7 }
-						scaled_militancy = { ideology = fascist factor = 7 }
-					}
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { ruling_party_ideology = fascist } }
-				owner = {
-					any_pop = {
-						limit = { 
-							OR = {
-								is_primary_culture = yes
-								is_accepted_culture = yes
-							}
-						}
-						scaled_militancy = { ideology = fascist factor = -5 }
-					}
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { ruling_party_ideology = communist } }
-				owner = {
-					any_pop = {
-						limit = { 
-							OR = {
-								is_primary_culture = yes
-								is_accepted_culture = yes
-							}
-						}
-						scaled_militancy = { ideology = communist factor = -5 }
-					}
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { ruling_party_ideology = reactionary } }
-				owner = {
-					any_pop = {
-						limit = { 
-							OR = {
-								is_primary_culture = yes
-								is_accepted_culture = yes
-							}
-						}
-						scaled_militancy = { ideology = reactionary factor = -2.5 }
-					}
-				}
-			}
-		}
-		
-		ai_will_do = { factor = 0 }
-	}
-	
 	enslave_the_serfs = {
 		alert = no
 		picture = enslave_the_serfs_image
 		potential = {
-            OR = {
-                has_country_flag = government_decisions_on
-                ai = yes
-            }
+			OR = {
+				has_country_flag = government_decisions_on
+				ai = yes
+			}
 			OR = {
 				government = absolute_monarchy
 				government = prussian_constitutionalism
@@ -567,6 +444,14 @@ political_decisions = {
 		
 		effect = {
 			plurality = -25
+			random = {
+				chance = 50
+				badboy = 1
+			}
+			random = {
+				chance = 50
+				badboy = 1
+			}
 			add_country_modifier = {
 				name = the_terror
 				duration = -1
@@ -591,10 +476,10 @@ political_decisions = {
 				limit = {
 					OR = { type = soldiers type = officers }
 					NOT = { pop_majority_ideology = communist }
-					}
-					militancy = -9 ideology = { factor = 0.35 value = communist }
-					random_list = { 50 = { reduce_pop = 0.9 } 50 = { reduce_pop = 0.85 } }
 				}
+				militancy = -9 ideology = { factor = 0.35 value = communist }
+				random_list = { 50 = { reduce_pop = 0.9 } 50 = { reduce_pop = 0.85 } }
+			}
 			any_pop = { limit = { pop_majority_ideology = communist } reduce_pop = 0.99 }
 			any_pop = { limit = { pop_majority_ideology = socialist } ideology = { factor = 0.5 value = communist } }
 			
@@ -694,6 +579,14 @@ political_decisions = {
 		
 		effect = {
 			plurality = -25
+			random = {
+				chance = 50
+				badboy = 1
+			}
+			random = {
+				chance = 50
+				badboy = 1
+			}
 			add_country_modifier = {
 				name = the_terror
 				duration = -1
@@ -905,7 +798,7 @@ political_decisions = {
 		
 		effect = {
 			plurality = -25
-			political_reform = totalitarianism
+			set_country_flag = totalitarian_government
 			add_country_modifier = {
 				name = totalitarian_system
 				duration = -1
@@ -978,8 +871,6 @@ political_decisions = {
 		potential = {
 			exists = yes
 			OR = {
-				AND = { tag = GLM owns = 375 NOT = { capital = 702 } }
-				AND = { tag = NET owns = 375 NOT = { capital = 375 } }
 				AND = { tag = POL owns = 706 NOT = { capital = 706 } }
 				AND = { tag = BUL owns = 809 NOT = { capital = 809 } }
 				AND = { tag = HUN owns = 641 NOT = { capital = 641 } }
@@ -1020,16 +911,18 @@ political_decisions = {
 				AND = { tag = TAJ owns = 1207 NOT = { capital = 1207 } }
 				AND = { tag = KAZ owns = 1181 NOT = { capital = 1181 } }
 				AND = { tag = MLI owns = 1794 NOT = { capital = 1794 } }
+				AND = { tag = VEN owns = 729 NOT = { capital = 729 } }
+				AND = { tag = KOR owns = 1624 NOT = { capital = 1624 } }
+				AND = { tag = ALB owns = 849 NOT = { capital = 849 } }
 				AND = { tag = ASH civilized = yes owns = 1907 NOT = { capital = 1907 } }
-				AND = { tag = SUD owns = 1827 NOT = { capital = 1827 } }
-				AND = { tag = RHO civilized = yes owns = 2068 NOT = { capital = 2068 } }
 			}
 		}
 		
 		allow = { war = no }
 		
 		effect = {
-			random_owned = { limit = { owner = { tag = RHO } } owner = { capital = 2068 } }
+			random_owned = { limit = { owner = { tag = ALB } } owner = { capital = 849 } }
+			random_owned = { limit = { owner = { tag = KOR } } owner = { capital = 1624 } }
 			random_owned = { limit = { owner = { tag = ASH } } owner = { capital = 1907 } }
 			random_owned = { limit = { owner = { tag = MLI } } owner = { capital = 1794 } }
 			random_owned = { limit = { owner = { tag = KAZ } } owner = { capital = 1181 } }
@@ -1074,9 +967,7 @@ political_decisions = {
 			random_owned = { limit = { owner = { tag = ALD } } owner = { capital = 1700 } }
 			random_owned = { limit = { owner = { tag = NIG } } owner = { capital = 1808 } }
 			random_owned = { limit = { owner = { tag = MLI } } owner = { capital = 1794 } }
-			random_owned = { limit = { owner = { tag = NET } } owner = { capital = 375 } }
-			random_owned = { limit = { owner = { tag = GLM } } owner = { capital = 702 } }
-			random_owned = { limit = { owner = { tag = SUD } } owner = { capital = 1827 } }
+			random_owned = { limit = { owner = { tag = VEN } } owner = { capital = 729 } }
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -1096,7 +987,7 @@ political_decisions = {
 				AND = {
 					TUR = { NOT = { has_country_flag = eastern_rumelia_exchange } }
 					any_owned_province = {
-						has_pop_culture = turkish
+						OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 						OR = {
 							province_id = 808
 							province_id = 815
@@ -1109,7 +1000,7 @@ political_decisions = {
 				AND = {
 					TUR = { NOT = { has_country_flag = thessalia_exchange } }
 					any_owned_province = {
-						has_pop_culture = turkish
+						OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 						OR = {
 							province_id = 831
 							province_id = 832
@@ -1122,7 +1013,7 @@ political_decisions = {
 				AND = {
 					TUR = { NOT = { has_country_flag = southern_macedonia_exchange } }
 					any_owned_province = {
-						has_pop_culture = turkish
+						OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 						OR = {
 							province_id = 819
 							province_id = 820
@@ -1135,7 +1026,7 @@ political_decisions = {
 				AND = {
 					TUR = { NOT = { has_country_flag = eastern_macedonia_exchange } }
 					any_owned_province = {
-						has_pop_culture = turkish
+						OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 						OR = {
 							province_id = 823
 							province_id = 829
@@ -1151,7 +1042,7 @@ political_decisions = {
 				AND = {
 					TUR = { NOT = { has_country_flag = bulgaria_exchange } }
 					any_owned_province = {
-						has_pop_culture = turkish
+						OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 						OR = {
 							province_id = 809
 							province_id = 810
@@ -1165,7 +1056,7 @@ political_decisions = {
 				AND = {
 					TUR = { NOT = { has_country_flag = dobrudja_exchange } }
 					any_owned_province = {
-						has_pop_culture = turkish
+						OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 						OR = {
 							province_id = 818
 							province_id = 674
@@ -1176,7 +1067,7 @@ political_decisions = {
 				AND = {
 					TUR = { NOT = { has_country_flag = macedonia_exchange } }
 					any_owned_province = {
-						has_pop_culture = turkish
+						OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 						OR = {
 							province_id = 806
 							province_id = 807
@@ -1187,33 +1078,40 @@ political_decisions = {
 				AND = {
 					TUR = { NOT = { has_country_flag = southern_serbia_exchange } }
 					any_owned_province = {
-						has_pop_culture = turkish
+						OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 						OR = {
-							province_id = 802
-							province_id = 803
 							province_id = 804
 							province_id = 798
 							province_id = 799
+							province_id = 2577
+						}
+					}
+				}
+				AND = {
+					TUR = { NOT = { has_country_flag = kosovo_exchange } }
+					any_owned_province = {
+						OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
+						OR = {
+							province_id = 802
+							province_id = 803
+							province_id = 3621
 						}
 					}
 				}
 				AND = {
 					TUR = { NOT = { has_country_flag = montenegro_exchange } }
 					any_owned_province = {
-						has_pop_culture = turkish
+						OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 						OR = {
 							province_id = 800
-							province_id = 2569
-							province_id = 2577
 						}
 					}
 				}
 				AND = {
 					TUR = { NOT = { has_country_flag = bosnia_exchange } }
 					any_owned_province = {
-						has_pop_culture = turkish
+						OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 						OR = {
-							province_id = 788
 							province_id = 789
 							province_id = 784
 							province_id = 785
@@ -1224,9 +1122,21 @@ political_decisions = {
 					}
 				}
 				AND = {
+					TUR = { NOT = { has_country_flag = herzegovina_exchange } }
+					any_owned_province = {
+						OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
+						OR = {
+							province_id = 788
+							province_id = 3636
+							province_id = 3637
+							province_id = 2569
+						}
+					}
+				}
+				AND = {
 					TUR = { NOT = { has_country_flag = albania_exchange } }
 					any_owned_province = {
-						has_pop_culture = turkish
+						OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 						OR = {
 							province_id = 849
 							province_id = 850
@@ -1257,6 +1167,7 @@ political_decisions = {
 			}
 			TUR = {
 				NOT = { TUR_860 = { NOT = { owned_by = TUR } } }
+				NOT = { 860 = { NOT = { owned_by = TUR } } }
 				NOT = { TUR_863 = { NOT = { owned_by = TUR } } }
 				NOT = { TUR_869 = { NOT = { owned_by = TUR } } }
 			}
@@ -1272,6 +1183,8 @@ political_decisions = {
 				AND = {
 					NOT = { TUR_823 = { NOT = { owned_by = THIS } } }
 					NOT = { EGY_843 = { NOT = { owned_by = THIS } } }
+					NOT = { TUR_843 = { NOT = { owned_by = THIS } } }
+					NOT = { GRE_838 = { NOT = { owned_by = THIS } } }
 					has_country_flag = southern_macedonia_exchange
 					has_country_flag = thessalia_exchange
 					NOT = { TUR = { has_country_flag = eastern_macedonia_exchange } }
@@ -1285,12 +1198,20 @@ political_decisions = {
 					NOT = { TUR = { has_country_flag = bosnia_exchange } }
 				}
 				AND = {
+					NOT = { TUR_3636 = { NOT = { owned_by = THIS } } }
+					NOT = { TUR = { has_country_flag = herzegovina_exchange } }
+				}
+				AND = {
 					NOT = { MON_2582 = { NOT = { owned_by = THIS } } }
 					NOT = { TUR = { has_country_flag = montenegro_exchange } }
 				}
 				AND = {
 					NOT = { TUR_803 = { NOT = { owned_by = THIS } } }
 					NOT = { TUR = { has_country_flag = southern_serbia_exchange } }
+				}
+				AND = {
+					NOT = { TUR_802 = { NOT = { owned_by = THIS } } }
+					NOT = { TUR = { has_country_flag = kosovo_exchange } }
 				}
 				AND = {
 					NOT = { TUR_806 = { NOT = { owned_by = THIS } } }
@@ -1322,7 +1243,7 @@ political_decisions = {
 						owns = 852
 						owns = 853
 						any_owned_province = {
-							has_pop_culture = turkish
+							OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 							OR = {
 								province_id = 849
 								province_id = 850
@@ -1348,7 +1269,6 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					owner = {
-						owns = 788
 						owns = 789
 						owns = 784
 						owns = 785
@@ -1356,10 +1276,9 @@ political_decisions = {
 						owns = 786
 						owns = 787
 						any_owned_province = {
-							has_pop_culture = turkish
+							OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 							OR = {
-								province_id = 788
-								province_id = 789
+								province_id = 789 
 								province_id = 784
 								province_id = 785
 								province_id = 783
@@ -1380,19 +1299,44 @@ political_decisions = {
 				country_event = 986517
 			}
 		}
+			random_owned = {
+				limit = {
+					owner = {
+						owns = 788
+						owns = 3636
+						owns = 3637
+						owns = 2569
+						any_owned_province = {
+							OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
+							OR = {
+								province_id = 788
+								province_id = 3636
+								province_id = 3637
+								province_id = 2569
+							}
+						}
+					}
+				}
+			random_country = {
+				limit = {
+					tag = TUR
+					NOT = { has_country_flag = herzegovina_exchange }
+					owns = 860
+					owns = 861
+				}
+				set_country_flag = herzegovina_exchange
+				country_event = 100040
+			}
+		}
 		
 			random_owned = {
 				limit = {
 					owner = {
 						owns = 800
-						owns = 2569
-						owns = 2577
 						any_owned_province = {
-							has_pop_culture = turkish
+							OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 							OR = {
 								province_id = 800
-								province_id = 2569
-								province_id = 2577
 							}
 						}
 					}
@@ -1412,19 +1356,17 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					owner = {
-						owns = 802
-						owns = 803
 						owns = 804
 						owns = 798
 						owns = 799
+						owns = 2577
 						any_owned_province = {
-							has_pop_culture = turkish
+							OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 							OR = {
-								province_id = 802
-								province_id = 803
 								province_id = 804
 								province_id = 798
 								province_id = 799
+								province_id = 2577
 							}
 						}
 					}
@@ -1440,6 +1382,34 @@ political_decisions = {
 				country_event = 986515
 			}
 		}
+			random_owned = {
+				limit = {
+					owner = {
+						owns = 802
+						owns = 803
+						owns = 3621
+						any_owned_province = {
+							OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
+							OR = {
+								province_id = 802
+								province_id = 803
+								province_id = 3621
+							}
+						}
+					}
+				}
+			random_country = {
+				limit = {
+					tag = TUR
+					NOT = { has_country_flag = kosovo_exchange }
+					owns = 860
+					owns = 861
+					owns = 3621
+				}
+				set_country_flag = kosovo_exchange
+				country_event = 100039
+			}
+		}
 		
 			random_owned = {
 				limit = {
@@ -1448,7 +1418,7 @@ political_decisions = {
 						owns = 807
 						owns = 1780
 						any_owned_province = {
-							has_pop_culture = turkish
+							OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 							OR = {
 								province_id = 806
 								province_id = 807
@@ -1476,7 +1446,7 @@ political_decisions = {
 						owns = 674
 						owns = 675
 						any_owned_province = {
-							has_pop_culture = turkish
+							OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 							OR = {
 								province_id = 818
 								province_id = 674
@@ -1507,7 +1477,7 @@ political_decisions = {
 						owns = 813
 						owns = 814
 						any_owned_province = {
-							has_pop_culture = turkish
+							OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 							OR = {
 								province_id = 809
 								province_id = 810
@@ -1540,7 +1510,7 @@ political_decisions = {
 						owns = 825
 						owns = 824
 						any_owned_province = {
-							has_pop_culture = turkish
+							OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 							OR = {
 								province_id = 831
 								province_id = 832
@@ -1574,7 +1544,7 @@ political_decisions = {
 						owns = 822
 						owns = 805
 						any_owned_province = {
-							has_pop_culture = turkish
+							OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 							OR = {
 								province_id = 819
 								province_id = 820
@@ -1614,7 +1584,7 @@ political_decisions = {
 						owns = 847
 						owns = 848
 						any_owned_province = {
-							has_pop_culture = turkish
+							OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 							OR = {
 								province_id = 823
 								province_id = 829
@@ -1651,7 +1621,7 @@ political_decisions = {
 						owns = 816
 						owns = 817
 						any_owned_province = {
-							has_pop_culture = turkish
+							OR = { culture = turkish culture = azerbaijani culture = karamanli culture = yoruk culture = kurdish culture = tatar culture = circassian }
 							OR = {
 								province_id = 808
 								province_id = 815
@@ -1682,13 +1652,16 @@ political_decisions = {
 		picture = change_border_policy
 		alert = no
 		potential = {
+			exists = yes
 			civilized = yes
-            ai = no
+			ai = no
 			NOT = { has_country_flag = change_border_policy }
-            #has_country_flag = government_decisions_on
+			#has_country_flag = government_decisions_on
 		}
 		
 		allow = {
+			state_n_government = 1
+			NOT = { has_country_modifier = law_changed_by_force }
 		}
 		
 		effect = {
@@ -1703,7 +1676,7 @@ political_decisions = {
 		alert = no
 		potential = {
 			has_country_flag = change_border_policy
-            #ai = no
+			#ai = no
 		}
 		
 		allow = {
@@ -1720,10 +1693,11 @@ political_decisions = {
 		picture = closed_border
 		alert = no
 		potential = {
-            OR = {
-                has_country_flag = change_border_policy
-                ai = yes
-            }
+			exists = yes
+			OR = {
+				has_country_flag = change_border_policy
+				ai = yes
+			}
 			NOT = { border_policy = closed_borders }
 		}
 		
@@ -1769,10 +1743,11 @@ political_decisions = {
 		picture = immigration_quotas
 		alert = no
 		potential = {
-            OR = {
-                has_country_flag = change_border_policy
-                ai = yes
-            }
+			exists = yes
+			OR = {
+				has_country_flag = change_border_policy
+				ai = yes
+			}
 			NOT = { border_policy = quota_immigration }
 			OR = {
 				is_culture_group = latin_american_cultures
@@ -1792,7 +1767,7 @@ political_decisions = {
 		
 		allow = {
 			state_n_government = 1
-            NOT = { has_country_modifier = law_changed_by_force }
+			NOT = { has_country_modifier = law_changed_by_force }
 		}
 		
 		effect = {
@@ -1822,16 +1797,16 @@ political_decisions = {
 		picture = immigrants_arriving
 		alert = no
 		potential = {
-            OR = {
-                has_country_flag = change_border_policy
-                ai = yes
-            }
+			exists = yes
+			OR = {
+				has_country_flag = change_border_policy
+				ai = yes
+			}
 			NOT = { border_policy = open_borders }
 		}
 		
 		allow = {
-			state_n_government = 1
-            NOT = { has_country_modifier = law_changed_by_force }
+			NOT = { has_country_modifier = law_changed_by_force }
 		}
 		
 		effect = {
@@ -1840,13 +1815,28 @@ political_decisions = {
 			political_reform = open_borders
 		}
 		
-		ai_will_do = { factor = 0 }
+		ai_will_do = {
+			factor = 1
+			modifier = { factor = 0 has_country_modifier = totalitarian_system }
+			modifier = { factor = 0 NOT = { year = 1850 } }
+			modifier = { factor = 0 NOT = { state_n_government = 1 } }
+			modifier = { factor = 0 has_country_flag = ghost_country }
+			modifier = {
+				factor = 0 
+				OR = {
+					tag = USA
+					tag = AST
+					tag = NZL
+					tag = CAN
+				}
+			}
+		}
 	}
 	
 	state_of_emergency = {
 		picture = state_of_emergency
 		potential = {
-			state_n_government = 1
+			year = 1870
 			NOT = { has_country_flag = state_of_emergency }
 			NOT = { has_country_modifier = law_changed_by_force }
 			OR = {
@@ -1893,7 +1883,16 @@ political_decisions = {
 			}
 		}
 		
-		ai_will_do = { factor = 1 }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					government = democracy
+					government = hms_government
+				}
+			}
+		}
 	}
 	
 	renovate_capital = {
@@ -1931,6 +1930,11 @@ political_decisions = {
 					NOT = { life_rating = 38 }
 				}
 				633 = { #Bratislava, Slovakia
+					owned_by = THIS
+					is_capital = yes
+					NOT = { life_rating = 38 }
+				}
+				625 = { #Prague
 					owned_by = THIS
 					is_capital = yes
 					NOT = { life_rating = 38 }
@@ -1994,11 +1998,7 @@ political_decisions = {
 			war = no
 			money = 10000
 			state_n_government = 1
-			OR = { 
-				central_bank_money_bill_printing = 1
-				iron_railroad = 1
-				invention = bessemer_steel
-			}
+			central_bank_money_bill_printing = 1
 			capital_scope = { has_building = railroad }
 		}
 		
@@ -2017,6 +2017,7 @@ political_decisions = {
 						province_id = 771
 						province_id = 768
 						province_id = 633
+						province_id = 625
 						province_id = 372
 						province_id = 375
 						province_id = 387
@@ -2036,4 +2037,315 @@ political_decisions = {
 		
 		ai_will_do = { factor = 1 }
 	}
+    five_year_plan = {
+        picture = five_year_plan
+        potential = {
+            government = proletarian_dictatorship
+            NOT = { has_country_modifier = five_year_plan }
+            NOT = { has_country_flag = five_year_plan }
+        }
+
+        allow = {
+            government = proletarian_dictatorship
+            NOT = { ruling_party_ideology = socialist }
+            state_n_government = 1
+            war = no
+        }
+
+        effect = {
+            prestige = 5
+            add_country_modifier = { name = five_year_plan duration = 1825 }
+            set_country_flag = five_year_plan
+        }
+        ai_will_do = { factor = 1 }
+    }
+    #suspend_political_powers = {
+    #    picture = pol_sus
+    #    potential = {
+    #        has_country_flag = government_decisions_on
+	#		NOT = { has_country_flag = pol_sus_flag }
+    #    }
+#
+    #    allow = {
+	#		NOT = { has_country_modifier = rights_suspended }
+    #        OR = {
+	#			average_militancy = 6
+	#			AND = {
+	#				OR = {
+	#					government = presidential_dictatorship
+	#					government = proletarian_dictatorship
+	#					government = fascist_dictatorship
+	#					government = provisional_government
+	#				}
+	#				average_militancy = 1
+	#			}
+	#			AND = {
+	#				OR = {
+	#					government = tibetandual
+	#					government = theocracy
+	#				}
+	#				average_militancy = 2
+	#			}
+	#			AND = {
+	#				OR = {
+	#					government = absolute_monarchy
+	#					government = prussian_constitutionalism
+	#					government = french_bourbon
+	#				}
+	#				average_militancy = 3
+	#			}
+	#		}
+    #    }
+#
+    #    effect = {
+	#		set_country_flag = pol_sus_flag
+    #        add_country_modifier = {
+    #            name = rights_suspended
+    #            duration = 1095
+    #        }
+    #        upper_house = {
+	#			ideology = Executive
+	#			value = 1
+    #        }
+    #        any_pop = {
+	#			militancy = 3
+    #        }
+	#		random_owned = { #cleanup event give back upper house composition.
+	#			limit = {
+	#				owner = { ruling_party_ideology = conservative }
+	#			}
+	#			owner = {
+	#				set_country_flag = pol_sus_conservative
+	#				clr_country_flag = pol_sus_reactionary
+	#				clr_country_flag = pol_sus_liberal
+	#				clr_country_flag = pol_sus_anarcho_liberal
+	#				clr_country_flag = pol_sus_socialist
+	#				clr_country_flag = pol_sus_communist
+	#				clr_country_flag = pol_sus_fascist
+	#			}
+	#		}
+	#		random_owned = {
+	#			limit = {
+	#				owner = { ruling_party_ideology = reactionary }
+	#			}
+	#			owner = {
+	#				set_country_flag = pol_sus_reactionary
+	#				clr_country_flag = pol_sus_conservative
+	#				clr_country_flag = pol_sus_liberal
+	#				clr_country_flag = pol_sus_anarcho_liberal
+	#				clr_country_flag = pol_sus_socialist
+	#				clr_country_flag = pol_sus_communist
+	#				clr_country_flag = pol_sus_fascist
+	#			}
+	#		}
+	#		random_owned = {
+	#			limit = {
+	#				owner = { ruling_party_ideology = liberal }
+	#			}
+	#			owner = {
+	#				set_country_flag = pol_sus_liberal
+	#				clr_country_flag = pol_sus_conservative
+	#				clr_country_flag = pol_sus_reactionary
+	#				clr_country_flag = pol_sus_anarcho_liberal
+	#				clr_country_flag = pol_sus_socialist
+	#				clr_country_flag = pol_sus_communist
+	#				clr_country_flag = pol_sus_fascist
+	#			}
+	#		}
+	#		random_owned = {
+	#			limit = {
+	#				owner = { ruling_party_ideology = anarcho_liberal }
+	#			}
+	#			owner = {
+	#				set_country_flag = pol_sus_anarcho_liberal
+	#				clr_country_flag = pol_sus_conservative
+	#				clr_country_flag = pol_sus_reactionary
+	#				clr_country_flag = pol_sus_liberal
+	#				clr_country_flag = pol_sus_socialist
+	#				clr_country_flag = pol_sus_communist
+	#				clr_country_flag = pol_sus_fascist
+	#			}
+	#		}
+	#		random_owned = {
+	#			limit = {
+	#				owner = { ruling_party_ideology = socialist }
+	#			}
+	#			owner = {
+	#				set_country_flag = pol_sus_socialist
+	#				clr_country_flag = pol_sus_conservative
+	#				clr_country_flag = pol_sus_reactionary
+	#				clr_country_flag = pol_sus_liberal
+	#				clr_country_flag = pol_sus_anarcho_liberal
+	#				clr_country_flag = pol_sus_communist
+	#				clr_country_flag = pol_sus_fascist
+	#			}
+	#		}
+	#		random_owned = {
+	#			limit = {
+	#				owner = { ruling_party_ideology = communist }
+	#			}
+	#			owner = {
+	#				set_country_flag = pol_sus_communist
+	#				clr_country_flag = pol_sus_conservative
+	#				clr_country_flag = pol_sus_reactionary
+	#				clr_country_flag = pol_sus_liberal
+	#				clr_country_flag = pol_sus_anarcho_liberal
+	#				clr_country_flag = pol_sus_socialist
+	#				clr_country_flag = pol_sus_fascist
+	#			}
+	#		}
+	#		random_owned = {
+	#			limit = {
+	#				owner = { ruling_party_ideology = fascist }
+	#			}
+	#			owner = {
+	#				set_country_flag = pol_sus_fascist
+	#				clr_country_flag = pol_sus_conservative
+	#				clr_country_flag = pol_sus_reactionary
+	#				clr_country_flag = pol_sus_liberal
+	#				clr_country_flag = pol_sus_anarcho_liberal
+	#				clr_country_flag = pol_sus_socialist
+	#				clr_country_flag = pol_sus_communist
+	#			}
+	#		}
+	#		random_owned = {
+	#			limit = {
+	#				owner = { government = presidential_dictatorship }
+	#			}
+	#			owner = {
+	#				set_country_flag = pol_sus_presidential_dictatorship
+	#				clr_country_flag = pol_sus_proletarian_dictatorship
+	#				clr_country_flag = pol_sus_fascist_dictatorship
+	#				clr_country_flag = pol_sus_provisional_government
+	#				clr_country_flag = pol_sus_theocracy
+	#				clr_country_flag = pol_sus_tibetandual
+	#				clr_country_flag = pol_sus_absolute_monarchy
+	#			}
+	#		}
+	#		random_owned = {
+	#			limit = {
+	#				owner = { government = proletarian_dictatorship }
+	#			}
+	#			owner = {
+	#				set_country_flag = pol_sus_proletarian_dictatorship
+	#				clr_country_flag = pol_sus_presidential_dictatorship
+	#				clr_country_flag = pol_sus_fascist_dictatorship
+	#				clr_country_flag = pol_sus_provisional_government
+	#				clr_country_flag = pol_sus_theocracy
+	#				clr_country_flag = pol_sus_tibetandual
+	#				clr_country_flag = pol_sus_absolute_monarchy
+	#			}
+	#		}
+	#		random_owned = {
+	#			limit = {
+	#				owner = { government = fascist_dictatorship }
+	#			}
+	#			owner = {
+	#				set_country_flag = pol_sus_fascist_dictatorship
+	#				clr_country_flag = pol_sus_proletarian_dictatorship
+	#				clr_country_flag = pol_sus_presidential_dictatorship
+	#				clr_country_flag = pol_sus_provisional_government
+	#				clr_country_flag = pol_sus_theocracy
+	#				clr_country_flag = pol_sus_tibetandual
+	#				clr_country_flag = pol_sus_absolute_monarchy
+	#			}
+	#		}
+	#		random_owned = {
+	#			limit = {
+	#				owner = { government = provisional_government }
+	#			}
+	#			owner = {
+	#				set_country_flag = pol_sus_provisional_government
+	#				clr_country_flag = pol_sus_proletarian_dictatorship
+	#				clr_country_flag = pol_sus_fascist_dictatorship
+	#				clr_country_flag = pol_sus_presidential_dictatorship
+	#				clr_country_flag = pol_sus_theocracy
+	#				clr_country_flag = pol_sus_tibetandual
+	#				clr_country_flag = pol_sus_absolute_monarchy
+	#			}
+	#		}
+	#		random_owned = {
+	#			limit = {
+	#				owner = { government = theocracy }
+	#			}
+	#			owner = {
+	#				set_country_flag = pol_sus_theocracy
+	#				clr_country_flag = pol_sus_proletarian_dictatorship
+	#				clr_country_flag = pol_sus_fascist_dictatorship
+	#				clr_country_flag = pol_sus_provisional_government
+	#				clr_country_flag = pol_sus_presidential_dictatorship
+	#				clr_country_flag = pol_sus_tibetandual
+	#				clr_country_flag = pol_sus_absolute_monarchy
+	#			}
+	#		}
+	#		random_owned = {
+	#			limit = {
+	#				owner = { government = tibetandual }
+	#			}
+	#			owner = {
+	#				set_country_flag = pol_sus_tibetandual
+	#				clr_country_flag = pol_sus_proletarian_dictatorship
+	#				clr_country_flag = pol_sus_fascist_dictatorship
+	#				clr_country_flag = pol_sus_provisional_government
+	#				clr_country_flag = pol_sus_theocracy
+	#				clr_country_flag = pol_sus_presidential_dictatorship
+	#				clr_country_flag = pol_sus_absolute_monarchy
+	#			}
+	#		}
+	#		random_owned = {
+	#			limit = {
+	#				owner = { government = absolute_monarchy }
+	#			}
+	#			owner = {
+	#				set_country_flag = pol_sus_absolute_monarchy
+	#				clr_country_flag = pol_sus_proletarian_dictatorship
+	#				clr_country_flag = pol_sus_fascist_dictatorship
+	#				clr_country_flag = pol_sus_provisional_government
+	#				clr_country_flag = pol_sus_theocracy
+	#				clr_country_flag = pol_sus_presidential_dictatorship
+	#				clr_country_flag = pol_sus_tibetandual
+	#			}
+	#		}
+    #    }
+    #    ai_will_do = {
+	#		factor = 0
+	#		# giving such powers to the AI is dangerous.
+    #        # modifier = {
+    #            # factor = 1
+    #            # average_militancy = 6
+    #        # }
+    #    }
+    #}
+    merchant_marine = {
+        picture = merchant_marine
+        potential = {
+        war = yes
+        has_country_flag = government_decisions_on
+        any_owned_province = { has_building = naval_base is_core = THIS }
+        NOT = { has_country_modifier = merchant_marine }
+        }
+        allow = {
+            money = 200000
+            any_owned_province = { has_building = naval_base is_blockaded = no controlled_by = THIS is_core = THIS }
+            OR = { ai = no is_mobilised = yes any_owned_province = { is_overseas = yes NOT = { controlled_by = THIS } } }
+            steamers = 1
+        }
+        effect = {
+            money = -150000
+            any_owned = { limit = { is_core = THIS is_blockaded = no controlled_by = THIS has_building = naval_base } sub_unit = { type = steam_transport value = current } }
+
+            any_owned = { limit = { is_core = THIS is_blockaded = no controlled_by = THIS has_building = naval_base } sub_unit = { type = steam_transport value = current } }
+
+            any_owned = { limit = { is_core = THIS is_blockaded = no controlled_by = THIS has_building = naval_base } sub_unit = { type = steam_transport value = current } }
+
+            any_owned = { limit = { is_core = THIS is_blockaded = no controlled_by = THIS has_building = naval_base } sub_unit = { type = steam_transport value = current } }
+
+            any_owned = { limit = { is_core = THIS is_blockaded = no controlled_by = THIS has_building = naval_base } sub_unit = { type = steam_transport value = current } }
+
+            add_country_modifier = { name = merchant_marine duration = 3650 }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
 }

@@ -1469,3 +1469,21 @@ artisan_fabric_wool = {
 	
 	workforce = 10000
 }
+##### COAL #####
+charcoal_factory = {       
+	template = cheap_factory_template
+	input_goods = {     
+		timber = 4
+	}
+	output_goods = coal 
+	value = 1.8
+	bonus = {
+		trigger = { 
+			OR = {
+				trade_goods_in_state = timber 
+				trade_goods_in_state = tropical_wood
+			}
+		}
+		value = 0.25
+	}
+}

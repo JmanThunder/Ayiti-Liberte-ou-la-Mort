@@ -642,6 +642,12 @@ migration_chance = {
 		THIS = { has_pop_culture = afro_american }
 		country = { slavery = no_slavery }
 	}
+	
+	modifier = {
+		factor = 10
+		THIS = { has_pop_culture = afro_american }
+		country = { tag = NAF }
+	}
 		
 	modifier = {
 		factor = 10
@@ -1504,7 +1510,7 @@ assimilation_chance = {
 				is_state_religion = no
 			}
 		}
-		country = { has_country_flag = new_world_nation }
+		#country = { has_country_flag = new_world_nation }
 		OR = {
 			location = { continent = north_america }
 			location = { continent = south_america }
@@ -1530,6 +1536,13 @@ assimilation_chance = {
 	modifier = {
 		factor = -20
 		has_culture_core = yes
+		OR = {
+			country = { citizens_rights = primary_culture_only }
+			AND = {
+				country = { citizens_rights = culture_voting_only }
+				is_accepted_culture = no
+			}
+		}
 	}
 	
 	modifier = {

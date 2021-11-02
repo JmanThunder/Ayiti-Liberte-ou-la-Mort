@@ -77,20 +77,9 @@ political_decisions = {
 		}
 	}	
 	
-	enable_debug_decision = {
-		potential = {
-			ai = no
-			has_global_flag = looking_through_options
-			NOT = { has_country_flag = enable_debug_decision }
-			NOT = { year = 1837 }
-		}
-		
-		allow = { }
-		
-		effect = { set_country_flag = enable_debug_decision }
-	}
-
 	test_dec = {
+		picture = starting_options
+		alert = no
 		potential = {
 			ai = no
 			has_country_flag = enable_debug_decision
@@ -162,6 +151,24 @@ political_decisions = {
 					exists = yes
 				}
 			}
+			OR = {
+				NOT = {
+					# There's a critical time period...
+					AND = {
+						# ...after crises are unlocked...
+						has_global_flag = revolution_n_counter_researched
+
+						# ...but before Great Wars are enabled...
+						NOT = { has_global_flag = great_wars_enabled }
+					}
+
+					# ...where the UK might be involved in a crisis war---in which case no ally
+					# may join. This time period implies...
+				}
+
+				# ...that a call to arms may not be issued if one was already performed recently.
+				NOT = { has_country_modifier = cch.recent-call-to-arms }
+			}
 		}
 		
 		allow = { 
@@ -215,10 +222,16 @@ political_decisions = {
 		}
 		
 		effect = {
-			   war = {               #No target initiates a one-day war that automatically resolves in a WP, but call_ally causes the new ally 
-				   attacker_goal = {  casus_belli = call_allies_cb  }
-				   call_ally = yes
-			   }
+			add_country_modifier = {
+				name = cch.recent-call-to-arms
+				duration = 30
+			}
+
+			# Audax Validator "." Ignore_NEXT
+			war = {
+				attacker_goal = { casus_belli = call_allies_cb }
+				call_ally = yes
+			}
 		}
 	}
 	
@@ -783,6 +796,10 @@ political_decisions = {
 					tag = ITA
 					is_greater_power = no
 				}
+				AND = { 
+					tag = ITS
+					is_greater_power = no
+				}
 			}
 			OR = {
 				AND = {
@@ -1164,7 +1181,10 @@ political_decisions = {
 					is_vassal = yes
 				}
 			}
-			NOT = { has_country_flag = civilize_ai_countries }
+			NOT = {
+                has_country_flag = civilize_ai_countries
+                has_country_modifier = colony_to_be_annexed
+            }
 		}
 		
 		allow = {

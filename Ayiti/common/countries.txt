@@ -5,6 +5,11 @@ REB 	= 	"countries/rebels.txt"
 
 ### NEW NATIONS MOD ###
 
+#ccHFMms#
+NAF  	="countries/New Africa.txt"
+ITS		= "countries/South Italy.txt"
+USS		="countries/United States of South America.txt"
+
 ###France Mod###
 NZF		="countries/French New Zealand.txt"
 FAS		="countries/French Australia.txt"

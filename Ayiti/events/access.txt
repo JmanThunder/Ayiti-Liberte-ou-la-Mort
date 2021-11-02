@@ -1,0 +1,51 @@
+country_event = {
+	id = 800009
+	title = "Unlawful Military Access"
+	desc = "Our spherelord has forbidden us from granting military access to their potential enemies"
+	
+	trigger = {
+		part_of_sphere = yes
+			OR = {
+			any_neighbor_country = {
+				military_access = THIS
+				NOT = {
+					is_sphere_leader_of = THIS
+					is_our_vassal = THIS
+					vassal_of = THIS
+					sphere_owner = { is_sphere_leader_of = THIS }
+				}
+			}
+			any_greater_power = {
+				military_access = THIS
+				NOT = {
+					is_sphere_leader_of = THIS
+					is_our_vassal = THIS
+					vassal_of = THIS
+					sphere_owner = { is_sphere_leader_of = THIS }
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 0
+	}
+	option = {
+		name = "Makes Sense"
+		random_country = {
+			limit = {
+				military_access = THIS
+				NOT = {
+					is_sphere_leader_of = THIS
+					is_our_vassal = THIS
+					vassal_of = THIS
+					sphere_owner = { is_sphere_leader_of = THIS }
+				}
+			}
+			end_military_access = THIS
+			relation = {
+				who = THIS
+				value = -25
+			}
+		}
+	}
+}
