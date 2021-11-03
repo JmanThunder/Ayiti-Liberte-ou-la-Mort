@@ -75,7 +75,7 @@
 	}
 
 	artisans = {
-		culture = misri
+		culture = 
 		religion = sunni
 		size = 10000
 	}
@@ -119,37 +119,37 @@
 	farmers = {
 		culture = misri
 		religion = sunni
-		size = 146000
+		size = 96000
 	}
 
 	bureaucrats = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 25
 	}
 
 	clergymen = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 175
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 10000
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 8000
 	}
 
 	farmers = {
-		culture = misri
+		culture = copt
 		religion = coptic
-		size = 26800
+		size = 76800
 	}
 
 	clergymen = {
@@ -165,14 +165,14 @@
 	}
 
 	clergymen = {
-		culture = sephardic
-		religion = jewish
+		culture = copt
+		religion = coptic
 		size = 25
 	}
 
 	artisans = {
-		culture = sephardic
-		religion = jewish
+		culture = copt
+		religion = coptic
 		size = 1225
 	}
 
@@ -182,9 +182,9 @@
 		size = 9000
 	}
 
-	slaves = {
+	farmers = {
 		culture = greek
-		religion = orthodox
+		religion = catholic
 		size = 1025
 	}
 }
@@ -265,25 +265,25 @@
 	farmers = {
 		culture = misri
 		religion = sunni
-		size = 79238
+		size = 59238
 	}
 
 	clergymen = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 25
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 150
 	}
 
 	farmers = {
-		culture = misri
+		culture = copt
 		religion = coptic
-		size = 2825
+		size = 22825
 	}
 }
 #Tanta (341600/85400 POPS)
@@ -333,25 +333,25 @@
 	farmers = {
 		culture = misri
 		religion = sunni
-		size = 75625
+		size = 55625
 	}
 
 	clergymen = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 25
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 100
 	}
 
 	farmers = {
-		culture = misri
+		culture = copt
 		religion = coptic
-		size = 1875
+		size = 21875
 	}
 }
 #Mansura (256200/64050 POPS)
@@ -401,25 +401,25 @@
 	farmers = {
 		culture = misri
 		religion = sunni
-		size = 54700
+		size = 44700
 	}
 
 	clergymen = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 25
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 100
 	}
 
 	farmers = {
-		culture = misri
+		culture = copt
 		religion = coptic
-		size = 1875
+		size = 11875
 	}
 
 	clergymen = {
@@ -481,25 +481,25 @@
 	farmers = {
 		culture = misri
 		religion = sunni
-		size = 49625
+		size = 42625
 	}
 
 	clergymen = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 50
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 100
 	}
 
 	farmers = {
-		culture = misri
+		culture = copt
 		religion = coptic
-		size = 1850
+		size = 8850
 	}
 }
 #Giza (386400/96600 POPS)
@@ -549,25 +549,25 @@
 	farmers = {
 		culture = misri
 		religion = sunni
-		size = 74820
+		size = 64820
 	}
 
 	clergymen = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 50
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 150
 	}
 
 	farmers = {
-		culture = misri
+		culture = copt
 		religion = coptic
-		size = 2800
+		size = 12800
 	}
 }
 #Alexandria Region (736000)
@@ -637,31 +637,31 @@
 	farmers = {
 		culture = misri
 		religion = sunni
-		size = 116725
+		size = 96725
 	}
 
 	bureaucrats = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 25
 	}
 
 	clergymen = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 125
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 750
 	}
 
 	farmers = {
-		culture = misri
+		culture = copt
 		religion = coptic
-		size = 12125
+		size = 32125
 	}
 
 	clergymen = {
@@ -751,8 +751,8 @@
 	}
 
 	farmers = {
-		culture = bedouin
-		religion = sunni
+		culture = copt
+		religion = coptic
 		size = 2700
 	}
 }
@@ -783,9 +783,15 @@
 	}
 
 	farmers = {
-		culture = bedouin
+		culture = misri
 		religion = sunni
-		size = 4575
+		size = 4075
+	}
+	
+	farmers = {
+		culture = copt
+		religion = coptic
+		size = 575
 	}
 }
 #Siwa (16000/4000 POPS)
@@ -817,7 +823,13 @@
 	farmers = {
 		culture = bedouin
 		religion = sunni
-		size = 3650
+		size = 2000
+	}
+	
+	farmers = {
+		culture = berber
+		religion = sunni
+		size = 1650
 	}
 }
 #Sinai Region (100000)
@@ -863,7 +875,13 @@
 	farmers = {
 		culture = misri
 		religion = sunni
-		size = 16340
+		size = 12340
+	}
+	
+	farmers = {
+		culture = copt
+		religion = coptic
+		size = 4340
 	}
 }
 #Al Arish (16000/4000 POPS)
@@ -905,20 +923,20 @@
 	}
 
 	clergymen = {
-		culture = bedouin
-		religion = sunni
+		culture = copt
+		religion = coptic
 		size = 50
 	}
 
 	artisans = {
-		culture = bedouin
-		religion = sunni
+		culture = copt
+		religion = coptic
 		size = 100
 	}
 
 	soldiers = {
-		culture = bedouin
-		religion = sunni
+		culture = copt
+		religion = coptic
 		size = 25
 	}
 
@@ -1167,25 +1185,25 @@
 	}
 
 	bureaucrats = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 15
 	}
 
 	clergymen = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 150
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 900
 	}
 
 	farmers = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 20935
 	}
@@ -1223,19 +1241,19 @@
 	}
 
 	clergymen = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 50
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 150
 	}
 
 	farmers = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 2800
 	}
@@ -1273,19 +1291,19 @@
 	}
 
 	clergymen = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 50
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 250
 	}
 
 	farmers = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 4800
 	}
@@ -1319,25 +1337,25 @@
 	farmers = {
 		culture = misri
 		religion = sunni
-		size = 37675
+		size = 30675
 	}
 
 	clergymen = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 50
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 300
 	}
 
 	farmers = {
-		culture = misri
+		culture = copt
 		religion = coptic
-		size = 5650
+		size = 12650
 	}
 }
 #Suhaj (96000/24000 POPS)
@@ -1369,25 +1387,25 @@
 	farmers = {
 		culture = misri
 		religion = sunni
-		size = 20025
+		size = 18025
 	}
 
 	clergymen = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 50
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 100
 	}
 
 	farmers = {
-		culture = misri
+		culture = copt
 		religion = coptic
-		size = 1850
+		size = 3850
 	}
 }
 #Said Region (244000)
@@ -1437,25 +1455,25 @@
 	}
 
 	bureaucrats = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 5
 	}
 
 	clergymen = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 50
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 100
 	}
 
 	farmers = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 1850
 	}
@@ -1493,19 +1511,19 @@
 	}
 
 	clergymen = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 50
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 250
 	}
 
 	farmers = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 4700
 	}
@@ -1543,19 +1561,19 @@
 	}
 
 	clergymen = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 50
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 100
 	}
 
 	farmers = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 1850
 	}
@@ -1593,19 +1611,19 @@
 	}
 
 	clergymen = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 50
 	}
 
 	artisans = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 100
 	}
 
 	farmers = {
-		culture = misri
+		culture = copt
 		religion = coptic
 		size = 1850
 	}

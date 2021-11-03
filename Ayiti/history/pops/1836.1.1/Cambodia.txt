@@ -57,13 +57,13 @@
 	}
 
 	clergymen = {
-		culture = yue
+		culture = cantonese
 		religion = mahayana
 		size = 75
 	}
 
 	artisans = {
-		culture = yue
+		culture = cantonese
 		religion = mahayana
 		size = 1250
 	}
@@ -103,17 +103,23 @@
 	farmers = {
 		culture = khmer
 		religion = theravada
-		size = 34150
+		size = 27150
+	}
+	
+	farmers = {
+		culture = pearic
+		religion = theravada
+		size = 7150
 	}
 
 	clergymen = {
-		culture = yue
+		culture = cantonese
 		religion = mahayana
 		size = 25
 	}
 
 	artisans = {
-		culture = yue
+		culture = cantonese
 		religion = mahayana
 		size = 500
 	}
@@ -126,6 +132,12 @@
 
 	slaves = {
 		culture = vietnamese
+		religion = mahayana
+		size = 3000
+	}
+	
+	farmers = {
+		culture = cham
 		religion = mahayana
 		size = 3000
 	}
@@ -157,7 +169,7 @@
 	}
 
 	farmers = {
-		culture = khmer
+		culture = bahnaric
 		religion = theravada
 		size = 16450
 	}
@@ -181,20 +193,20 @@
 	}
 
 	soldiers = {
-		culture = vietnamese
-		religion = mahayana
+		culture = cham
+		religion = hindu
 		size = 25
 	}
 
 	farmers = {
-		culture = asian_minor
-		religion = mahayana
+		culture = cham
+		religion = hindu
 		size = 2750
 	}
 
 	slaves = {
 		culture = vietnamese
-		religion = mahayana
+		religion = hindu
 		size = 2000
 	}
 }
@@ -270,35 +282,41 @@
 	farmers = {
 		culture = khmer
 		religion = theravada
-		size = 39425
+		size = 34425
 	}
 
 	slaves = {
-		culture = khmer
+		culture = pearic
 		religion = theravada
 		size = 3100
 	}
+	
+	farmers = {
+		culture = katuic
+		religion = theravada
+		size = 5400
+	}
 
 	clergymen = {
-		culture = yue
+		culture = cantonese
 		religion = mahayana
 		size = 50
 	}
 
 	artisans = {
-		culture = yue
+		culture = cantonese
 		religion = mahayana
 		size = 750
 	}
 
 	soldiers = {
-		culture = yue
+		culture = cantonese
 		religion = mahayana
 		size = 50
 	}
 
 	farmers = {
-		culture = yue
+		culture = cantonese
 		religion = mahayana
 		size = 2150
 	}

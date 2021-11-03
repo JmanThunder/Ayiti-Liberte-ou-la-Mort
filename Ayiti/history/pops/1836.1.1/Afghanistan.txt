@@ -63,37 +63,37 @@
 	}
 
 	aristocrats = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 2000
 	}
 
 	officers = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 350
 	}
 
 	clergymen = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 975
 	}
 
 	artisans = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 4900
 	}
 
 	soldiers = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 1000
 	}
 
 	farmers = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 82775
 	}
@@ -135,7 +135,7 @@
 	}
 
 	slaves = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 27500
 	}
@@ -173,37 +173,43 @@
 	}
 
 	farmers = {
-		culture = pashtun
+		culture = persian
 		religion = sunni
-		size = 70112
+		size = 60112
+	}
+	
+	farmers = {
+		culture = turkmen
+		religion = sunni
+		size = 10112
 	}
 
 	aristocrats = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 750
 	}
 
 	clergymen = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 388
 	}
 
 	artisans = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 1900
 	}
 
 	soldiers = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 375
 	}
 
 	farmers = {
-		culture = tajik
+		culture = turkmen
 		religion = sunni
 		size = 34587
 	}
@@ -239,7 +245,7 @@
 	}
 
 	slaves = {
-		culture = pashtun
+		culture = turkmen
 		religion = sunni
 		size = 15000
 	}
@@ -277,33 +283,39 @@
 	}
 
 	farmers = {
-		culture = pashtun
+		culture = persian
 		religion = sunni
-		size = 34650
+		size = 30650
+	}
+	
+	farmers = {
+		culture = aimak
+		religion = sunni
+		size = 12650
 	}
 
 	aristocrats = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 50
 	}
 
 	clergymen = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 238
 	}
 
 	soldiers = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 1000
 	}
 
 	farmers = {
-		culture = tajik
+		culture = persian
 		religion = sunni
-		size = 14912
+		size = 10912
 	}
 	
 	aristocrats = {
@@ -331,13 +343,13 @@
 	}
 
 	farmers = {
-		culture = persian
+		culture = pashtun
 		religion = sunni
-		size = 15000
+		size = 11000
 	}
 
 	slaves = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 6500
 	}
@@ -375,31 +387,31 @@
 	}
 
 	aristocrats = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 250
 	}
 
 	clergymen = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 138
 	}
 
 	artisans = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 700
 	}
 
 	soldiers = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 1000
 	}
 
 	farmers = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 11912
 	}
@@ -465,7 +477,7 @@
 	}
 
 	slaves = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 8500
 	}
@@ -565,9 +577,15 @@
 	}
 
 	farmers = {
+		culture = baluchi
+		religion = sunni
+		size = 52712
+	}
+	
+	farmers = {
 		culture = pashtun
 		religion = sunni
-		size = 72712
+		size = 22712
 	}
 
 	aristocrats = {
@@ -595,7 +613,7 @@
 	}
 
 	farmers = {
-		culture = hazara
+		culture = pashtun
 		religion = shiite
 		size = 8100
 	}
@@ -723,85 +741,85 @@
 #Faizabad (340000/85000 POPS)
 1210 = {
 	aristocrats = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 125
 	}
 
 	clergymen = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 100
 	}
 	
 	bureaucrats = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 300
 	}
 
 	artisans = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 350
 	}
 	
 	officers = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 100
 	}
 
 	soldiers = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 1000
 	}
 
 	farmers = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 5512
 	}
 
 	aristocrats = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 1650
 	}
 
 	clergymen = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 775
 	}
 
 	artisans = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 3750
 	}
 	
 	officers = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 100
 	}
 
 	soldiers = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 4000
 	}
 
 	farmers = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 62825
 	}
 
 	slaves = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 6000
 	}

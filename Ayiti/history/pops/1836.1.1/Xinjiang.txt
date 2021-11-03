@@ -45,61 +45,61 @@
 	}
 
 	aristocrats = {
-		culture = kirgiz
+		culture = kazak
 		religion = animist
 		size = 225
 	}
 
 	clergymen = {
-		culture = kirgiz
+		culture = kazak
 		religion = animist
 		size = 125
 	}
 
 	artisans = {
-		culture = kirgiz
+		culture = kazak
 		religion = animist
 		size = 575
 	}
 
 	soldiers = {
-		culture = kirgiz
+		culture = kazak
 		religion = animist
 		size = 100
 	}
 
 	farmers = {
-		culture = kirgiz
+		culture = kazak
 		religion = animist
 		size = 8975
 	}
 
 	clergymen = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 50
 	}
 
 	artisans = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 500
 	}
 
 	farmers = {
-		culture = tajik
+		culture = persian
 		religion = sunni
 		size = 1450
 	}
 
 	clergymen = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 25
 	}
 
 	artisans = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 975
 	}
@@ -141,11 +141,17 @@
 		religion = sunni
 		size = 300
 	}
-
+	
 	farmers = {
 		culture = uighur
 		religion = sunni
-		size = 27325
+		size = 4025
+	}
+
+	farmers = {
+		culture = kazak
+		religion = sunni
+		size = 8325
 	}
 
 	aristocrats = {
@@ -215,33 +221,33 @@
 	}
 
 	aristocrats = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 100
 	}
 
 	clergymen = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 50
 	}
 
 	artisans = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 250
 	}
 
 	soldiers = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 50
 	}
 
 	farmers = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
-		size = 4550
+		size = 14550
 	}
 }
 #Tulta (88000/22000 POPS)
@@ -273,7 +279,7 @@
 	farmers = {
 		culture = uighur
 		religion = sunni
-		size = 6375
+		size = 3375
 	}
 
 	aristocrats = {
@@ -363,7 +369,13 @@
 	farmers = {
 		culture = mongol
 		religion = gelugpa
-		size = 6375
+		size = 3000
+	}
+	
+	farmers = {
+		culture = oirat
+		religion = gelugpa
+		size = 3375
 	}
 }
 #Aksu (192000/48000 POPS)
@@ -523,7 +535,7 @@
 	}
 
 	slaves = {
-		culture = kirgiz
+		culture = kazak
 		religion = mahayana
 		size = 900
 	}
@@ -719,31 +731,31 @@
 	}
 
 	aristocrats = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 50
 	}
 
 	clergymen = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 75
 	}
 
 	artisans = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 150
 	}
 
 	soldiers = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 25
 	}
 
 	farmers = {
-		culture = mongol
+		culture = oirat
 		religion = gelugpa
 		size = 2700
 	}

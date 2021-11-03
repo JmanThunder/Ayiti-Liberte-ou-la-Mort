@@ -1,4 +1,4 @@
-#Khwarazm Region (40000) #see Uzbekistan.txt and Kazakhstan.txt for balance of region 
+#Khwarazm Region (40000) #see persianistan.txt and Kazakhstan.txt for balance of region 
 #under the rule of Khiva in 1836  
 #Dashhowuz (40000/10000 POPS) #now part of Turkmenistan  
 1196 = {
@@ -33,31 +33,31 @@
 	}
 	
 	aristocrats = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 25
 	}
 
 	clergymen = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 25
 	}
 
 	artisans = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 100
 	}
 
 	soldiers = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 25
 	}
 
 	farmers = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 1825
 	}
@@ -169,33 +169,33 @@
 #Chardzhou (132000/33000 POPS)   
 1206 = {
 	aristocrats = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 25
 	}
 
 	clergymen = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 25
 	}
 
 	artisans = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 100
 	}
 
 	soldiers = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
 		size = 25
 	}
 
 	farmers = {
-		culture = uzbek
+		culture = persian
 		religion = sunni
-		size = 1825
+		size = 5825
 	}
 
 	aristocrats = {
@@ -225,8 +225,9 @@
 	farmers = {
 		culture = turkmen
 		religion = sunni
-		size = 21025
+		size = 17025
 	}
+
 }
 
 #Merv - Former Line Islands (?/? POPS)
