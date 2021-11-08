@@ -4039,7 +4039,7 @@
 	}
 
 	artisans = {
-		culture = mullato
+		culture = french
 		religion = catholic
 		size = 33750
 	}

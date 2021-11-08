@@ -16,9 +16,9 @@ political_decisions = {
 		
 		effect = {
 			badboy = 10
-			TUR_880 = {
-				add_core = BYZ
-			}
+			#TUR_880 = {
+			#	add_core = BYZ
+			#}
 			TUR_876 = {
 				add_core = BYZ
 			}

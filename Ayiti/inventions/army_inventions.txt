@@ -27,7 +27,7 @@ column_formation = {
 		}
 	}
 }
-line_formation {
+line_formation = {
 	limit = { post_napoleonic_thought = 1 }
 	chance = {
 		base = 5
@@ -385,6 +385,7 @@ elastic_defense_system = {
 			defence = 1
 		}
 	}
+}
 }
 flexible_counterattacks = {
 	limit = { deep_defense_system = 1 }
@@ -853,6 +854,7 @@ waterproof_paper_cartrige = {
 		}
 	}
 }
+
 colonial_negotiations = {
 	limit = { 
 		year = 1880 
@@ -934,6 +936,48 @@ gatling_guns = {
 		}
 	}
 }
+breech_loaded_rifle_armament = {
+	limit = { breech_loaded_rifles = 1 invention = muzzle_loaded_rifle_armament }
+	chance = {
+		base = 5
+		modifier = {
+			factor = 2
+			war = yes
+			war_countries = { invention = breech_loaded_rifle_armament }
+		}
+	}
+	effect = {
+		infantry = {
+			attack = 1
+			supply_consumption = 0.20
+		}
+		guard = {
+			attack = 1
+			supply_consumption = 0.20
+		}
+		engineer = {
+			attack = 1
+			supply_consumption = 0.20
+		}
+		dragoon = {
+			attack = 1
+			supply_consumption = 0.20
+		}
+		hussar = {
+			attack = 1
+			supply_consumption = 0.20
+		}
+		cavalry = {
+			attack = 0.5
+			supply_consumption = 0.20
+		}
+		irregular = {
+			attack = 0.5
+			supply_consumption = 0.20
+		}
+	}
+}
+
 machine_gun_armament = {
 	limit = { machine_guns = 1 }
 	chance = {

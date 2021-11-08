@@ -1989,7 +1989,7 @@ political_decisions = {
 			AUS_771 = { owned_by = THIS }
 			OR = {
 			 AUS_780 = { owned_by = THIS }
-			 AUS_777 = { owned_by = THIS }
+			 #AUS_777 = { owned_by = THIS }
 			}
 		}
 		

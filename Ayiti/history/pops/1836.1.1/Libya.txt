@@ -2,24 +2,24 @@
 	###Tripolitania Region###
 
 1731 = {
-	aristocrats	={culture = libyan		religion = sunni	size = 675		}
-	bureaucrats	={culture = libyan		religion = sunni	size = 50		}
-	clergymen 	={culture = libyan		religion = sunni	size = 350		}
-	officers 	={culture = libyan		religion = sunni	size = 75		}
-	artisans 	={culture = libyan		religion = sunni	size = 3500		}
-	soldiers 	={culture = libyan		religion = sunni	size = 1175		}
-	farmers 	={culture = libyan 		religion = sunni 	size = 85975	}
+	aristocrats	={culture = maghrebi		religion = sunni	size = 675		}
+	bureaucrats	={culture = maghrebi		religion = sunni	size = 50		}
+	clergymen 	={culture = maghrebi		religion = sunni	size = 350		}
+	officers 	={culture = maghrebi		religion = sunni	size = 75		}
+	artisans 	={culture = maghrebi		religion = sunni	size = 3500		}
+	soldiers 	={culture = maghrebi		religion = sunni	size = 1175		}
+	farmers 	={culture = maghrebi 		religion = sunni 	size = 85975	}
 	clergymen 	={culture = sephardic		religion = jewish	size = 25		}
 	artisans 	={culture = sephardic		religion = jewish	size = 1475		}
 	slaves 		={culture = forest_bantu	religion = sunni	size = 1500		}}
 	
 #Gharyan (40000/10000 POPS)
 1732 = {
-	aristocrats	={culture = libyan		religion = sunni	size = 50		}
-	clergymen 	={culture = libyan		religion = sunni	size = 75		}
-	artisans 	={culture = libyan		religion = sunni	size = 150		}
-	soldiers 	={culture = libyan		religion = sunni	size = 1100		}
-	farmers 	={culture = libyan 		religion = sunni 	size = 2550		}
+	aristocrats	={culture = maghrebi		religion = sunni	size = 50		}
+	clergymen 	={culture = maghrebi		religion = sunni	size = 75		}
+	artisans 	={culture = maghrebi		religion = sunni	size = 150		}
+	soldiers 	={culture = maghrebi		religion = sunni	size = 1100		}
+	farmers 	={culture = maghrebi 		religion = sunni 	size = 2550		}
 	aristocrats	={culture = berber			religion = sunni	size = 75		}
 	clergymen 	={culture = berber			religion = sunni	size = 75		}
 	artisans 	={culture = berber			religion = sunni	size = 250		}
@@ -30,61 +30,61 @@
 #Misratah (84000/21000 POPS)
 1733 = {
 	aristocrats = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 175
 	}
 
 	clergymen = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 100
 	}
 
 	artisans = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 500
 	}
 
 	soldiers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 100
 	}
 
 	farmers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 10125
 	}
 
 	aristocrats = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 125
 	}
 
 	clergymen = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 50
 	}
 
 	artisans = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 275
 	}
 
 	soldiers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 1100
 	}
 
 	farmers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 4250
 	}
@@ -110,61 +110,61 @@
 #Sirt (100000/25000 POPS)
 1734 = {
 	aristocrats = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 150
 	}
 
 	clergymen = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 75
 	}
 
 	artisans = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 400
 	}
 
 	soldiers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 75
 	}
 
 	farmers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 7300
 	}
 
 	aristocrats = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 225
 	}
 
 	clergymen = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 125
 	}
 
 	artisans = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 650
 	}
 
 	soldiers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 1100
 	}
 
 	farmers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 10000
 	}
@@ -180,43 +180,43 @@
 #Benghazi (124000/31000 POPS)
 1735 = {
 	aristocrats = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 450
 	}
 
 	bureaucrats = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 25
 	}
 
 	officers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 25
 	}
 
 	clergymen = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 150
 	}
 
 	artisans = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 735
 	}
 
 	soldiers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 1200
 	}
 
 	farmers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 23175
 	}
@@ -254,31 +254,31 @@
 #Darnah (60000/15000 POPS)
 1736 = {
 	aristocrats = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 200
 	}
 
 	clergymen = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 125
 	}
 
 	artisans = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 650
 	}
 
 	soldiers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 125
 	}
 
 	farmers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 11900
 	}
@@ -292,31 +292,31 @@
 #Tobruk (48000/12000 POPS)
 1737 = {
 	aristocrats = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 125
 	}
 
 	clergymen = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 100
 	}
 
 	artisans = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 450
 	}
 
 	soldiers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 75
 	}
 
 	farmers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 8200
 	}
@@ -332,19 +332,19 @@
 #Jaghbub (12000/3000 POPS)
 1738 = {
 	aristocrats = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 25
 	}
 
 	clergymen = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 50
 	}
 
 	artisans = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 150
 	}
@@ -365,37 +365,37 @@
 #Waddan (16000/4000 POPS)
 1740 = {
 	aristocrats = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 25
 	}
 
 	clergymen = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 50
 	}
 
 	artisans = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 150
 	}
 
 	soldiers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 25
 	}
 
 	farmers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 2750
 	}
 
 	aristocrats = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 15
 	}
@@ -516,43 +516,43 @@
 #Murzuk (16000/4000 POPS)
 1741 = {
 	aristocrats = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 15
 	}
 
 	bureaucrats = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 20
 	}
 
 	officers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 15
 	}
 
 	clergymen = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 25
 	}
 
 	artisans = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 50
 	}
 
 	soldiers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 10
 	}
 
 	farmers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 880
 	}
@@ -596,31 +596,31 @@
 #Sabha (14000/3500 POPS)
 1742 = {
 	aristocrats = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 15
 	}
 
 	clergymen = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 25
 	}
 
 	artisans = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 50
 	}
 
 	soldiers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 10
 	}
 
 	farmers = {
-		culture = libyan
+		culture = maghrebi
 		religion = sunni
 		size = 900
 	}

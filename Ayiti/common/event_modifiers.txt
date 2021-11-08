@@ -1,6 +1,29 @@
 ##################################################################################################
 # scriptable and usable for event-system below.
 ##################################################################################################
+####AI Personalities
+
+coward_ai = {
+    badboy = -0.01
+    cb_generation_speed_modifier = 0.25
+    icon = 3
+}
+
+benefactor_ai = {
+    cb_generation_speed_modifier = 0.1
+    icon = 3
+}
+
+malevolent_ai = {
+    cb_generation_speed_modifier = -0.05
+    icon = 3
+}
+
+picking_personality = {
+    icon = 3
+}
+
+####
 
 loyal_vassal = {
     diplomatic_points_modifier = 0.1
@@ -3405,6 +3428,37 @@ fort_constructions = {
 	tax_efficiency = -0.10
 	icon = 10
 }
+### Collectivisation ###
+
+collectivisation = {
+	local_RGO_output = 0.15
+	local_RGO_throughput = 0.15
+	icon = 13
+}
+
+five_year_plan = {
+    suppression_points_modifier = 0.25
+    factory_throughput = 0.75
+    poor_income_modifier = 1.25
+    education_efficiency_modifier = 5.0
+    rgo_output = 0.5
+    global_population_growth = 0.01
+    global_pop_militancy_modifier = 0.01
+    icon = 11
+}
+rights_suspended = {
+    global_pop_consciousness_modifier = -0.05
+    global_pop_militancy_modifier = -0.05
+    icon = 3
+}
+
+merchant_marine = {
+    import_cost = 0.50
+    icon = 15
+}
+craftsmen_fix_cooldown = {
+    icon = 12
+}
 ###Latin Monetary Union###
 latin_monetary_union = {
     tax_efficiency = 0.05
@@ -3441,4 +3495,186 @@ local_hospital = {
 	# TODO: Want it to be 0.0001, but that doesn't seem to work.
 	population_growth = 0.001
 	icon = 19
+}
+colonial_negotiations = {
+	# TODO: where did you come from
+	icon = 1
+}
+#########
+evidence_of_massacre = {
+    prestige = -0.08
+    badboy = 0.2
+    influence_modifier = -0.1
+    icon = 8
+}
+
+evidence_of_massacre2 = {
+    prestige = -0.01
+    badboy = 0.2
+    icon = 8
+}
+
+interment_camps = {
+    global_immigrant_attract = -2
+    non_accepted_pop_consciousness_modifier = 0.4
+    non_accepted_pop_militancy_modifier = 0.3
+    tax_efficiency = -0.2
+    administrative_efficiency_modifier = -0.4
+    badboy = 0.2
+    icon = 18
+}
+
+mass_graves = {
+    immigrant_attract = -3
+    pop_consciousness_modifier = 0.2
+    immigrant_push = 0.5
+    life_rating = -0.25
+    icon = 20
+}
+war_propaganda = {
+    war_exhaustion = -0.02
+    badboy = 0.01
+    icon = 15
+}
+
+government_propaganda = {
+    literacy_con_impact = -0.20
+    issue_change_speed = -0.20
+    ruling_party_support = 0.2
+    icon = 5
+}
+
+constitutional_crisis = {
+    badboy = 0.01
+    icon = 6
+}
+
+war_focus = {
+    war_exhaustion = -0.1
+    icon = 7
+}
+considering_colonial_offer = {
+    diplomatic_points_modifier = -0.01
+    icon = 5
+}
+
+the_long_war = {
+    badboy = 0.23
+    war_exhaustion = 0.05
+    icon = 16
+}
+
+# research_lagging_behind = {
+    # prestige = -0.1
+    # research_points_modifier = -0.5
+    # icon = 14
+# }
+
+homeland_productive_year = {
+    farm_RGO_eff = 0.25
+    pop_militancy_modifier = -0.01
+    icon = 13
+}
+
+severe_homeland_drought = {
+    farm_RGO_eff = -0.45
+    farm_rgo_size = -0.25
+    pop_militancy_modifier = 0.02
+    icon = 14
+}
+
+homeland_drought = {
+    farm_RGO_eff = -0.25
+    farm_rgo_size = -0.15
+    pop_militancy_modifier = 0.01
+    icon = 14
+}
+
+disable_conquest_cb = {
+    icon = 16
+}
+
+# colony_to_state_conversion = {
+    # research_points_on_conquer = -1
+    # icon = 5
+# }
+
+colony_to_be_annexed = {
+    prestige = -0.01
+    icon = 5
+}
+
+regency_government = {
+    global_pop_consciousness_modifier = 0.1
+    global_pop_militancy_modifier = 0.05
+    political_reform_desire  = 0.25
+    cb_generation_speed_modifier = -0.25
+    influence_modifier = -0.25
+    org_regain = -0.25
+    icon = 8
+}
+
+reactionary_demands = {
+    core_pop_militancy_modifier = -0.3
+    research_points_modifier = -0.45
+    icon = 10
+}
+
+integrating_colony = {
+    prestige = 0.01
+    icon = 7
+}
+
+claimed_africa = {
+    prestige = 0.01
+    icon = 7
+}
+
+non_interventionism_trade_policy = {
+    min_tariff = 0.75
+    tariff_efficiency_modifier = 0.1
+    tax_efficiency = 0.05
+    icon = 9
+}
+
+french_liberal_school = {
+    max_tariff = -0.2
+    administrative_efficiency_modifier = 0.2
+    tax_efficiency = 0.2
+    industry_tech_research_bonus = 0.05
+    commerce_tech_research_bonus = 0.05
+    culture_tech_research_bonus = 0.05
+    #influence_modifier = 0.1
+    icon = 9
+}
+smithian_school = {
+    max_tariff = -0.1
+    tax_efficiency = 0.2
+    tariff_efficiency_modifier = 0.2
+    administrative_efficiency_modifier = 0.05
+    icon = 9
+}
+
+no_trade_policy_set = {
+    icon = 9
+}
+
+russian_protectionism = {
+    min_tariff = 0.75
+    tariff_efficiency_modifier = 0.05
+    icon = 9
+}
+
+mercantilism = {
+    min_tariff = 0.5
+    tariff_efficiency_modifier = 0.15
+    icon = 9
+}
+
+economic_nationalism = {
+    min_tariff = 0.75
+    tariff_efficiency_modifier = 0.3
+    industry_tech_research_bonus = 0.05
+    #influence_modifier = -0.1
+    icon = 9
 }

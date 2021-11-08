@@ -3,31 +3,31 @@
 #Port au Prince (312000/78000 POPS)
 2213 = {
 	aristocrats = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 825
 	}
 	
 	officers = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 150
 	}
 
 	clergymen = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 175
 	}
 
 	artisans = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 4050
 	}
 
 	soldiers = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 100
 	}
@@ -46,25 +46,25 @@
 #Cap Haitien (204000/51000 POPS)
 2215 = {
 	aristocrats = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 550
 	}
 
 	clergymen = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 75
 	}
 
 	artisans = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 2550
 	}
 
 	soldiers = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 200
 	}
@@ -79,31 +79,31 @@
 #Jeremie (204000/51000 POPS)
 3327 = {
 	aristocrats = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 550
 	}
 
 	clergymen = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 75
 	}
 
 	artisans = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 2550
 	}
 
 	soldiers = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 200
 	}
 
 	farmers = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 46825
 	}
@@ -113,7 +113,7 @@
 #Môle St-Nicolas
 3284 = {
 	clergymen = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 75
 	}
@@ -125,7 +125,7 @@
 	}
 	
 	artisans = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 550
 	}
@@ -133,25 +133,25 @@
 #Fort-Liberte (204000/51000 POPS)
 3329 = {
 	aristocrats = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 550
 	}
 
 	clergymen = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 75
 	}
 
 	artisans = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 2550
 	}
 
 	soldiers = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 200
 	}
@@ -166,25 +166,25 @@
 
 3373 = {
 	aristocrats = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 550
 	}
 
 	clergymen = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 75
 	}
 
 	artisans = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 2550
 	}
 
 	soldiers = {
-		culture = mullato
+		culture = mulatto
 		religion = catholic
 		size = 200
 	}

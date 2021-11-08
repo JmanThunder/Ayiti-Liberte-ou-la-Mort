@@ -21,7 +21,7 @@
 	}
 	clergymen = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 120
 	}
 	clergymen = {
@@ -51,7 +51,7 @@
 	}
 	farmers = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 9579‬
 	}
 	clergymen = {
@@ -135,12 +135,12 @@
 	}
 	clergymen = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 656
 	}
 	artisans = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 1331
 	}
 	soldiers = {
@@ -155,7 +155,7 @@
 	}
 	farmers = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 22947
 	}
 	clergymen = {
@@ -187,7 +187,7 @@
 	}
 	soldiers = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 150
 	}
 	artisans = {
@@ -212,7 +212,7 @@
 	}
 	clergymen = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 100
 	}
 	artisans = {
@@ -227,7 +227,7 @@
 	}
 	farmers = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 8000
 	}
 	soldiers = {
@@ -274,7 +274,7 @@
 	}
 	clergymen = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 50
 	}
 	clergymen = {
@@ -294,7 +294,7 @@
 	}
 	farmers = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 3000
 	}
 	farmers = {
@@ -304,7 +304,7 @@
 	}
 	farmers = {
 		culture = bulgarian
-		religion = bektashi
+		religion = sunni
 		size = 500
 	}
 	farmers = {
@@ -347,7 +347,7 @@
 	}
 	clergymen = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 300
 	}
 	soldiers = {
@@ -357,7 +357,7 @@
 	}
 		soldiers = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 300
 	}
 	artisans = {
@@ -377,7 +377,7 @@
 	}
 	farmers = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 14000
 	}
 	farmers = {
@@ -397,7 +397,7 @@
 	}
 		farmers = {
 		culture = bulgarian
-		religion = bektashi
+		religion = sunni
 		size = 2000
 	}
 	farmers = {

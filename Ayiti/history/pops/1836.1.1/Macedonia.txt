@@ -177,7 +177,7 @@
 	}
 	clergymen = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 100
 	}
 	clergymen = {
@@ -202,7 +202,7 @@
 	}
 	farmers = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 2000
 	}
 	farmers = { 

@@ -48,7 +48,7 @@ country_event = {
 	option = {
 		name = "Our expansionist behavior must continue!"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = jingoism
 				factor = 0.05
 			}
@@ -227,7 +227,7 @@ country_event = {
 	id = 198408
 	title = "EVTNAME198408"
 	desc = "EVTDESC198408"
-	picture "Smithsonian"
+	picture = "Smithsonian"
 	
         #the four lines below are only needed if they are yes
 	 

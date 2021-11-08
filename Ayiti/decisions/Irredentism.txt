@@ -401,7 +401,7 @@ political_decisions = {
 			set_country_flag = claimed_greater_serbia
 			add_accepted_culture = montenegrin
 			prestige = 10
-			AUS_777 = { add_core = SER }
+			#AUS_777 = { add_core = SER }
 			TUR_788 = { add_core = SER }
 			MON_2582 = { add_core = SER }
 			AUS_780 = { add_core = SER }
@@ -437,7 +437,7 @@ political_decisions = {
 			set_country_flag = reclaimed_croatia
 			prestige = 5
 			AUS_771 = { add_core = HUN }
-			AUS_777 = { add_core = HUN }
+			#AUS_777 = { add_core = HUN }
 			778 = { add_core = HUN }
 			any_country = {
 				limit = {

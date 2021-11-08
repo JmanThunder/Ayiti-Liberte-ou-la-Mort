@@ -39,8 +39,8 @@
 	}
 	
 	artisans = {
-		culture = pan_italian
-		religion = catholic
+		culture = british
+		religion = protestant
 		size = 50
 	}
 

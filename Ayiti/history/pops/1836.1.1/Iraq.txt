@@ -118,37 +118,37 @@
 	
 	aristocrats = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 100
 	}
 	
 	officers = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 100
 	}
 	
 	soldiers = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 100
 	}
 
 	clergymen = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 100
 	}
 
 	artisans = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 1100
 	}
 
 	farmers = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 17325
 	}
 
@@ -252,25 +252,25 @@
 	
 	soldiers = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 100
 	}
 
 	clergymen = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 100
 	}
 
 	artisans = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 100
 	}
 
 	farmers = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 4775
 	}
 }
@@ -362,25 +362,25 @@
 	
 	soldiers = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 100
 	}
 
 	clergymen = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 100
 	}
 
 	artisans = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 100
 	}
 
 	farmers = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 1750
 	}
 }
@@ -498,55 +498,55 @@
 	
 	aristocrats = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 100
 	}
 	
 	officers = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 100
 	}
 	
 	soldiers = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 100
 	}
 
 	clergymen = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 100
 	}
 
 	artisans = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 2000
 	}
 
 	farmers = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 3650
 	}
 
 	clergymen = {
 		culture = mashriqi
-		religion = syriac
+		religion = catholic
 		size = 100
 	}
 
 	artisans = {
 		culture = mashriqi
-		religion = syriac
+		religion = catholic
 		size = 1500
 	}
 
 	farmers = {
 		culture = mashriqi
-		religion = syriac
+		religion = catholic
 		size = 2425
 	}
 
@@ -784,25 +784,25 @@
 	
 	soldiers = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 100
 	}
 
 	clergymen = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 25
 	}
 
 	artisans = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 50
 	}
 
 	farmers = {
 		culture = assyrian
-		religion = syriac
+		religion = catholic
 		size = 825
 	}
 }

@@ -17,7 +17,7 @@ country_event = {
 	option = {
 		name = "Favour Protectionism."
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = protectionism 
 				factor = 0.15
 			}
@@ -28,7 +28,7 @@ country_event = {
 	option = {
 		name = "Favour Free Trade."
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = free_trade 
 				factor = 0.15
 			}
@@ -58,7 +58,7 @@ country_event = {
 	option = {
 		name = "Laissez Faire"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = laissez_faire 
 				factor = 0.15
 			}
@@ -69,7 +69,7 @@ country_event = {
 	option = {
 		name = "Interventionism"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = interventionism 
 				factor = 0.15
 			}
@@ -80,7 +80,7 @@ country_event = {
 	option = {
 		name = "State Capitalism"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = state_capitalism 
 				factor = 0.15
 			}
@@ -91,7 +91,7 @@ country_event = {
 	option = {
 		name = "Planned Economy"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = planned_economy 
 				factor = 0.15
 			}
@@ -121,7 +121,7 @@ country_event = {
 	option = {
 		name = "Ahteism"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = pro_atheism 
 				factor = 0.15
 			}
@@ -132,7 +132,7 @@ country_event = {
 	option = {
 		name = "Secularized"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = secularized 
 				factor = 0.15
 			}
@@ -143,7 +143,7 @@ country_event = {
 	option = {
 		name = "Pluralism"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = pluralism
 				factor = 0.15
 			}
@@ -154,7 +154,7 @@ country_event = {
 	option = {
 		name = "Moralism"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = moralism 
 				factor = 0.15
 			}
@@ -184,7 +184,7 @@ country_event = {
 	option = {
 		name = "Residency"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = residency 
 				factor = 0.15
 			}
@@ -195,7 +195,7 @@ country_event = {
 	option = {
 		name = "Limited Citizenship"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = limited_citizenship 
 				factor = 0.15
 			}
@@ -206,7 +206,7 @@ country_event = {
 	option = {
 		name = "Full Citizenship"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = full_citizenship
 				factor = 0.15
 			}
@@ -236,7 +236,7 @@ country_event = {
 	option = {
 		name = "Jingoism"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = jingoism 
 				factor = 0.15
 			}
@@ -247,7 +247,7 @@ country_event = {
 	option = {
 		name = "Pro Military"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = pro_military 
 				factor = 0.15
 			}
@@ -258,7 +258,7 @@ country_event = {
 	option = {
 		name = "Anti Military"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = anti_military
 				factor = 0.15
 			}
@@ -269,7 +269,7 @@ country_event = {
 	option = {
 		name = "Pacifism"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = pacifism
 				factor = 0.15
 			}
@@ -303,7 +303,7 @@ country_event = {
 	option = {
 		name = "Support Slavery"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = yes_slavery 
 				factor = 0.15
 			}
@@ -314,7 +314,7 @@ country_event = {
 	option = {
 		name = "Abolish Slavery"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = no_slavery
 				factor = 0.15
 			}
@@ -344,7 +344,7 @@ country_event = {
 	option = {
 		name = "No Voting"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = none_voting 
 				factor = 0.15
 			}
@@ -355,7 +355,7 @@ country_event = {
 	option = {
 		name = "Landed Voting"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = landed_voting
 				factor = 0.15
 			}
@@ -366,7 +366,7 @@ country_event = {
 	option = {
 		name = "Wealth Weighted Voting"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = wealth_weighted_voting
 				factor = 0.15
 			}
@@ -377,7 +377,7 @@ country_event = {
 	option = {
 		name = "Wealth Voting"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = wealth_voting
 				factor = 0.15
 			}
@@ -388,7 +388,7 @@ country_event = {
 	option = {
 		name = "Universal Weighted Voting"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = universal_weighted_voting
 				factor = 0.15
 			}
@@ -399,7 +399,7 @@ country_event = {
 	option = {
 		name = "Universal Voting"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = universal_voting
 				factor = 0.15
 			}
@@ -429,7 +429,7 @@ country_event = {
 	option = {
 		name = "Ruling Party Only"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = party_appointed 
 				factor = 0.15
 			}
@@ -440,7 +440,7 @@ country_event = {
 	option = {
 		name = "Appointed"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = appointed
 				factor = 0.15
 			}
@@ -451,7 +451,7 @@ country_event = {
 	option = {
 		name = "Two Per State"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = state_equal_weight
 				factor = 0.15
 			}
@@ -462,7 +462,7 @@ country_event = {
 	option = {
 		name = "Based on Population"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = population_equal_weight
 				factor = 0.15
 			}
@@ -492,7 +492,7 @@ country_event = {
 	option = {
 		name = "First Past the Post"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = first_past_the_post
 				factor = 0.15
 			}
@@ -503,7 +503,7 @@ country_event = {
 	option = {
 		name = "Jefferson Method"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = jefferson_method
 				factor = 0.15
 			}
@@ -514,7 +514,7 @@ country_event = {
 	option = {
 		name = "Proportional"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = proportional_representation
 				factor = 0.15
 			}
@@ -544,7 +544,7 @@ country_event = {
 	option = {
 		name = "No Meeting"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = no_meeting
 				factor = 0.15
 			}
@@ -555,7 +555,7 @@ country_event = {
 	option = {
 		name = "Meetings Allowed."
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = yes_meeting
 				factor = 0.15
 			}
@@ -584,7 +584,7 @@ country_event = {
 	option = {
 		name = "State Press"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = state_press
 				factor = 0.15
 			}
@@ -595,7 +595,7 @@ country_event = {
 	option = {
 		name = "Censored Press"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = censored_press
 				factor = 0.15
 			}
@@ -606,7 +606,7 @@ country_event = {
 	option = {
 		name = "Free Press"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = free_press
 				factor = 0.15
 			}
@@ -636,7 +636,7 @@ country_event = {
 	option = {
 		name = "No Trade Unions"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = no_trade_unions
 				factor = 0.15
 			}
@@ -647,7 +647,7 @@ country_event = {
 	option = {
 		name = "State Only Unions"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = state_controlled
 				factor = 0.15
 			}
@@ -658,7 +658,7 @@ country_event = {
 	option = {
 		name = "Non Socialist Unions Allowed"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = non_socialist
 				factor = 0.15
 			}
@@ -669,7 +669,7 @@ country_event = {
 	option = {
 		name = "All Unions Allowed"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = all_trade_unions
 				factor = 0.15
 			}
@@ -699,7 +699,7 @@ country_event = {
 	option = {
 		name = "Underground Parties"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = underground_parties
 				factor = 0.15
 			}
@@ -710,7 +710,7 @@ country_event = {
 	option = {
 		name = "Harrasment"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = harassment
 				factor = 0.15
 			}
@@ -721,7 +721,7 @@ country_event = {
 	option = {
 		name = "Gerrymandering"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = gerrymandering
 				factor = 0.15
 			}
@@ -732,7 +732,7 @@ country_event = {
 	option = {
 		name = "Non Secret Ballots"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = non_secret_ballots
 				factor = 0.15
 			}
@@ -743,7 +743,7 @@ country_event = {
 	option = {
 		name = "Secret Ballots"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = secret_ballots
 				factor = 0.15
 			}
@@ -777,7 +777,7 @@ country_event = {
 	option = {
 		name = "No Minimun Wage"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = no_minimum_wage
 				factor = 0.15
 			}
@@ -788,7 +788,7 @@ country_event = {
 	option = {
 		name = "Trinket Wage"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = trinket_wage
 				factor = 0.15
 			}
@@ -799,7 +799,7 @@ country_event = {
 	option = {
 		name = "Low Minimun Wage"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = low_minimum_wage
 				factor = 0.15
 			}
@@ -810,7 +810,7 @@ country_event = {
 	option = {
 		name = "Acceptable Minimun Wage"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = acceptable_minimum_wage
 				factor = 0.15
 			}
@@ -821,7 +821,7 @@ country_event = {
 	option = {
 		name = "Good Minimun Wage"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = good_minimum_wage
 				factor = 0.15
 			}
@@ -851,7 +851,7 @@ country_event = {
 	option = {
 		name = "Unlimited Work Day"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = no_work_hour_limit
 				factor = 0.15
 			}
@@ -862,7 +862,7 @@ country_event = {
 	option = {
 		name = "14 Hour Work Day"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = fourteen_hours
 				factor = 0.15
 			}
@@ -873,7 +873,7 @@ country_event = {
 	option = {
 		name = "12 Hour Work Day"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = twelve_hours
 				factor = 0.15
 			}
@@ -884,7 +884,7 @@ country_event = {
 	option = {
 		name = "10 Hour Work Day"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = ten_hours
 				factor = 0.15
 			}
@@ -895,7 +895,7 @@ country_event = {
 	option = {
 		name = "8 Hour Work Day"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = eight_hours
 				factor = 0.15
 			}
@@ -925,7 +925,7 @@ country_event = {
 	option = {
 		name = "No Safety Regulations"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = no_safety
 				factor = 0.15
 			}
@@ -936,7 +936,7 @@ country_event = {
 	option = {
 		name = "Minimal Safety"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = trinket_safety
 				factor = 0.15
 			}
@@ -947,7 +947,7 @@ country_event = {
 	option = {
 		name = "Limited Safety"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = low_safety
 				factor = 0.15
 			}
@@ -958,7 +958,7 @@ country_event = {
 	option = {
 		name = "Acceptable Safety"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = acceptable_safety
 				factor = 0.15
 			}
@@ -969,7 +969,7 @@ country_event = {
 	option = {
 		name = "Good Safety"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = good_safety
 				factor = 0.15
 			}
@@ -999,7 +999,7 @@ country_event = {
 	option = {
 		name = "No Subsidies"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = no_subsidies
 				factor = 0.15
 			}
@@ -1010,7 +1010,7 @@ country_event = {
 	option = {
 		name = "Trinket Subsidies"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = trinket_subsidies
 				factor = 0.15
 			}
@@ -1021,7 +1021,7 @@ country_event = {
 	option = {
 		name = "Low Subsidies"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = low_subsidies
 				factor = 0.15
 			}
@@ -1032,7 +1032,7 @@ country_event = {
 	option = {
 		name = "Acceptable Subsidies"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = acceptable_subsidies
 				factor = 0.15
 			}
@@ -1043,7 +1043,7 @@ country_event = {
 	option = {
 		name = "Good Subsidies"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = good_subsidies
 				factor = 0.15
 			}
@@ -1073,7 +1073,7 @@ country_event = {
 	option = {
 		name = "No Pensions"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = no_pensions
 				factor = 0.15
 			}
@@ -1084,7 +1084,7 @@ country_event = {
 	option = {
 		name = "Trinket Pensions"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = trinket_pensions
 				factor = 0.15
 			}
@@ -1095,7 +1095,7 @@ country_event = {
 	option = {
 		name = "Low Pensions"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = low_pensions
 				factor = 0.15
 			}
@@ -1106,7 +1106,7 @@ country_event = {
 	option = {
 		name = "Acceptable Pensions"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = acceptable_pensions
 				factor = 0.15
 			}
@@ -1117,7 +1117,7 @@ country_event = {
 	option = {
 		name = "Good Pensions"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = good_pensions
 				factor = 0.15
 			}
@@ -1147,7 +1147,7 @@ country_event = {
 	option = {
 		name = "No Health Care"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = no_health_care
 				factor = 0.15
 			}
@@ -1158,7 +1158,7 @@ country_event = {
 	option = {
 		name = "Trinket Health Care"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = trinket_health_care
 				factor = 0.15
 			}
@@ -1169,7 +1169,7 @@ country_event = {
 	option = {
 		name = "Low Health Care"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = low_health_care
 				factor = 0.15
 			}
@@ -1180,7 +1180,7 @@ country_event = {
 	option = {
 		name = "Acceptable Health Care"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = acceptable_health_care
 				factor = 0.15
 			}
@@ -1191,7 +1191,7 @@ country_event = {
 	option = {
 		name = "Good Health Care"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = good_health_care
 				factor = 0.15
 			}
@@ -1221,7 +1221,7 @@ country_event = {
 	option = {
 		name = "No Schools"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = no_schools
 				factor = 0.15
 			}
@@ -1232,7 +1232,7 @@ country_event = {
 	option = {
 		name = "Low Schools"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = low_schools
 				factor = 0.15
 			}
@@ -1243,7 +1243,7 @@ country_event = {
 	option = {
 		name = "Acceptable Schools"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = acceptable_schools
 				factor = 0.15
 			}
@@ -1254,7 +1254,7 @@ country_event = {
 	option = {
 		name = "Good Schools"
 		any_pop = {
-			dominant_issue {
+			dominant_issue = {
 				value = good_schools
 				factor = 0.15
 			}

@@ -27,45 +27,45 @@
 	}
 
 	aristocrats = {
-		culture = turkish
-		religion = sunni
+		culture = azerbaijani
+		religion = shiite
 		size = 125
 	}
 
 	bureaucrats = {
-		culture = turkish
-		religion = sunni
+		culture = azerbaijani
+		religion = shiite
 		size = 15
 	}
 
 	clergymen = {
-		culture = turkish
-		religion = sunni
+		culture = azerbaijani
+		religion = shiite
 		size = 50
 	}
 
 	artisans = {
-		culture = turkish
-		religion = sunni
+		culture = azerbaijani
+		religion = shiite
 		size = 300
 	}
 
 	soldiers = {
-		culture = turkish
-		religion = sunni
+		culture = azerbaijani
+		religion = shiite
 		size = 60
 	}
 
 	farmers = {
-		culture = turkish
-		religion = sunni
-		size = 5350
+		culture = azerbaijani
+		religion = shiite
+		size = 53500
 	}
 
 	aristocrats = {
 		culture = persian
 		religion = shiite
-		size = 175
+		size = 1750
 	}
 
 	bureaucrats = {
@@ -81,19 +81,19 @@
 	}
 
 	artisans = {
-		culture = talysh
+		culture = adari
 		religion = shiite
 		size = 600
 	}
 
 	soldiers = {
-		culture = talysh
+		culture = adari
 		religion = shiite
 		size = 125
 	}
 
 	farmers = {
-		culture = talysh
+		culture = adari
 		religion = shiite
 		size = 10985
 	}
@@ -155,38 +155,38 @@
 	}
 
 	aristocrats = {
-		culture = talysh
+		culture = adari
 		religion = shiite
 		size = 125
 	}
 
 	clergymen = {
-		culture = talysh
+		culture = adari
 		religion = shiite
 		size = 75
 	}
 
 	artisans = {
-		culture = talysh
+		culture = adari
 		religion = shiite
 		size = 350
 	}
 
 	soldiers = {
-		culture = talysh
+		culture = adari
 		religion = shiite
 		size = 75
 	}
 
 	farmers = {
-		culture = talysh
+		culture = adari
 		religion = shiite
 		size = 5400
 	}
 	
 	farmers = {
-		culture = turkish
-		religion = sunni
+		culture = azerbaijani
+		religion = shiite
 		size = 100
 	}
 
@@ -229,32 +229,32 @@
 #Sheki (24000/6000 POPS)
 1104 = {
 	aristocrats = {
-		culture = turkish
-		religion = sunni
+		culture = azerbaijani
+		religion = shiite
 		size = 30
 	}
 
 	clergymen = {
-		culture = turkish
-		religion = sunni
+		culture = azerbaijani
+		religion = shiite
 		size = 45
 	}
 
 	artisans = {
-		culture = turkish
-		religion = sunni
+		culture = azerbaijani
+		religion = shiite
 		size = 100
 	}
 
 	soldiers = {
-		culture = turkish
-		religion = sunni
+		culture = azerbaijani
+		religion = shiite
 		size = 25
 	}
 
 	farmers = {
-		culture = turkish
-		religion = sunni
+		culture = azerbaijani
+		religion = shiite
 		size = 1800
 	}
 
@@ -321,31 +321,31 @@
 #Ganja (68000/17000 POPS)
 1105 = {
 	aristocrats = {
-		culture = turkish
+		culture = azerbaijani
 		religion = shiite
 		size = 225
 	}
 
 	clergymen = {
-		culture = turkish
+		culture = azerbaijani
 		religion = shiite
 		size = 75
 	}
 
 	artisans = {
-		culture = turkish
+		culture = azerbaijani
 		religion = shiite
 		size = 500
 	}
 
 	soldiers = {
-		culture = turkish
+		culture = azerbaijani
 		religion = shiite
 		size = 100
 	}
 
 	farmers = {
-		culture = turkish
+		culture = azerbaijani
 		religion = shiite
 		size = 3100
 	}
@@ -395,26 +395,26 @@
 	}
 
 	artisans = {
-		culture = talysh
+		culture = adari
 		religion = shiite
 		size = 450
 	}
 
 	soldiers = {
-		culture = talysh
+		culture = adari
 		religion = shiite
 		size = 100
 	}
 	
 	farmers = {
-		culture = talysh
+		culture = adari
 		religion = shiite
 		size = 225
 	}
 
 	farmers = {
-		culture = turkish
-		religion = sunni
+		culture = azerbaijani
+		religion = shiite
 		size = 8000
 	}
 
@@ -451,37 +451,37 @@
 #Lankaran (56000/14000 POPS)
 1107 = {
 	aristocrats = {
-		culture = talysh
+		culture = adari
 		religion = shiite
 		size = 225
 	}
 
 	clergymen = {
-		culture = talysh
+		culture = adari
 		religion = shiite
 		size = 125
 	}
 
 	artisans = {
-		culture = talysh
+		culture = adari
 		religion = shiite
 		size = 700
 	}
 
 	soldiers = {
-		culture = talysh
+		culture = adari
 		religion = shiite
 		size = 150
 	}
 	
 	farmers = {
-		culture = talysh
+		culture = adari
 		religion = shiite
 		size = 5000
 	}
 
 	farmers = {
-		culture = turkish
+		culture = azerbaijani
 		religion = shiite
 		size = 9800
 	}

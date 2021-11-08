@@ -2038,7 +2038,7 @@ levantine = {
 
 turko_semitic = {
 	leader = arab
-	is_overseas = no
+	#is_overseas = no
 	unit = OttomanGC
 	turkish = {
 		color = {250 55 55}
@@ -2157,7 +2157,7 @@ turko_semitic = {
 
 caucasian = {
 	leader = russian
-	is_overseas = no
+	#is_overseas = no
 	unit = RussianGC
 		#north_caucasian = {
 		#color = {252 255 161}
@@ -2170,7 +2170,22 @@ caucasian = {
 		#}
 		#radicalism = 10
 		#}
-		
+		balkar = {
+		color = {54 110 188}
+		first_names = { Alexander Arakel Aram Aramais Arsen Artashes Artavazd Artem Ashot Assadour
+		Atom Barsegh Benyamin Deran Eduard Gevorg Gor Gurgen Hayk Hovhannes
+		Hovsep Hrant Isahak Karapet Kevork Levon Mkrtich Murad Nubad Papken
+		Rouben Sarkis Sergei Sevan Smbat Soghomon Souren Spiru Tadevos Taniel
+		Vahan Vahe Vahram Vano Vartan Vazrik Vilen Yegishe Yervand Zaven
+		}
+
+		last_names = { Afeyan Arakelian Asdvadzadrian Asriyan Avakian Aydinian Azatian Bogosian Bounyatian Chakheltian
+		Dombalagian Egoyan Erznvian Ghakarian Ghorghanian Guediguian Ghehanian Hannessoghlian Hasratian Hovsepian
+		Kaloian Kamalian Khachaturian Khatchaturiants Konstandyan Konstanian Mamikonian Mardvian Matinian Melik-Aghamalian
+		Mkhitarian Mussiniants Pahlevanian Peleshyan Safrazpekian Sahakiam Sarksyan Sekoyan Shadunts Shahsuvarian
+		Tavakyalian Tchartichian Tcholakhian Ter-Sarkayan Terzian Tigraniants Tigranov Toshian Varapetian Vartanian
+		}
+	}
 		dagestani = {
 		color = {128 207 128}
 		first_names = {
@@ -2374,7 +2389,7 @@ caucasian = {
 
 arab = {
 	leader = arab
-	is_overseas = no
+	#is_overseas = no
 	unit = MoroccoGC
 	maghrebi = {
 		color = {24 103 22}
@@ -2518,7 +2533,7 @@ arab = {
 
 iranian_turanian = {
 	leader = arab
-	is_overseas = no
+	#is_overseas = no
 	unit = MiddleEasternGC	
 	ossetian = {
 		color = {158 75 55}
@@ -2754,7 +2769,8 @@ iranian_turanian = {
 			Meshhedi Nakhchevani Pesyan Rokni Shafaei Shahbakhti 
 			Shirazi Tabrizi Tahmasebi Zahedi
 		}
-		tajik = {
+	}
+	tajik = {
 		color = {114 76 57}
 		first_names = {
 			Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
@@ -2767,7 +2783,7 @@ iranian_turanian = {
 			Muhammad Narbuta Navruz Ahmad Niyaz Pir Muhammad Sanjar Sevinch Shadi Shahmurad Shahrukh Shaykh 
 			Subhan Quli Sufyan Suleyman Tahir Timur Ubaydulla Umar Vali Vali Muhammad Yadgar Daniyal Haidar 
 			Iskandar
-			}
+		}
 		last_names = {
 			Airom Ansari Ayrum Buzarjomehri Davallu Esfahani Farhani 
 			Jahanbani Kashani Khan Khuzai
@@ -2775,7 +2791,6 @@ iranian_turanian = {
 			Shirazi Tabrizi Tahmasebi Zahedi "Arabshahid" "Qungrat" "Bayan Arslan" "Mongke Cheren" "Mongke Bayar" "Suren Chinua" "Oyugun Nasan"
 			"Bora Tolui" Qadancher Batulun Batutai Bokejin Arighqan Burilgiteni
 			Bayarnai Subegene Tegusdai Yekedei
-			}
 		}
 	}
 	adari = {
@@ -2863,7 +2878,7 @@ iranian_turanian = {
 		radicalism = 10
 	}
 	pashtun = {
-		color = {190 180 170}
+		color = {199 151 230}
 		
 		first_names = {
 			Abdallah "Abd al-Rahman" "Abd al-Quddus" Afzal Ahmad Akbar Akram Ayyub Fath "Firuz al-Din" "Habib Alllah" Haydar Humayun "Inayat Allah" Ishaq Jamal Kamran Kohandil Mahmud Mahsud Mihrdil Muhammad Murad Nadir "Nasr Allah" Omar Qaysar Shahpur "Sher Ali" Shuja Suleyman Timur Yaqub Zaman Abbas Abolhassan Alah-Verdi Allahyar Amin Aram Assad Aurang Ayeshah Azad Babek Babak Bahman 
@@ -2926,7 +2941,7 @@ iranian_turanian = {
 
 central_asian = {
 	leader = asian
-	is_overseas = no
+	#is_overseas = no
 	unit = AsianGC
 	mongol = {
 		color = {207 181 75}
@@ -3066,7 +3081,7 @@ central_asian = {
 	}
 	
 	uzbek = {
-		color = {24 182 55}
+		color = {152 67 56}
 		first_names = {
 			"Abd al-Ahad" "Abd al-Karim" "Abu al-Ghazi" Abulfayz Alimqul Aqim "Allah Quli" Haydar Husayn 
 			Iltazar Isfandiyar Jahangir Khudayar Madali Mahmud Muhammad Murad 
@@ -3169,7 +3184,7 @@ central_asian = {
 			}
 	}
 	turkmen = {
-		color = {113 135 186}
+		color = { 192 150 190 }
 		first_names = {
 			Ahmed Haydar Mehmed Murad Nurberdi Qilich
 		}
@@ -4495,6 +4510,13 @@ east_asian = {
 		last_names = { Yi Jo Bak Hong Seo Jeong Jang Shin Lim Song Jin Jun Hwang Jeon Min Yoon Ahn Ko Joon Bae Nam An "Dong Hyun" Sung Ha Baek MinSu Cha Im Won Jihun Seong "Sang Min" Minwoo Minho "Ji Hoon" Joo Woo Woojin Donghyun Jongmin Jaehyun Ji "Seung Hyun" "Sung Min" Seungmin Jihoon "Jong-un" "Jong-il" "Pong-ju" "Yong-rim" "Yong-nam" "Ryong-hae" "Yong-ho"
 		}
 	}
+	yue = {
+        color = {89 34 100}
+        first_names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu
+        }
+        last_names = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu
+        }
+    }
 	union = CHI
 }
 
@@ -4526,7 +4548,7 @@ far_east_asian = {
 
 oceanic = {
 	leader = nativeamerican
-	is_overseas = no
+	#is_overseas = no
 	polynesian = {
 		color = {89 35 168}
 		first_names = { Finau Ulukalala Taufa'ahau Tupou Taupe Havaiki Lika Longotahi Vaopuka "Te Taulu" Tavita Malietoa Iosefo William 
@@ -4573,7 +4595,7 @@ oceanic = {
 
 native_american = {
 	leader = nativeamerican
-	is_overseas = no
+	#is_overseas = no
 	#zapotec = {
 	#	color = {87 199 81}
 	#	first_names = { Agustín Alberto Alfonso Alfredo Andrés Benito Carlos César Eduardo Eugenio
@@ -4741,7 +4763,7 @@ native_american = {
 
 american_cultures = {
 	leader = european
-	is_overseas = no
+	#is_overseas = no
 	yankee = {
 		color = {65 65 129}
 		first_names = { Adam Alexander William Henry Michael Samuel Joshua George John Matthew Mark Luke Lucas Jeffrey Ulysses 
@@ -4789,7 +4811,7 @@ american_cultures = {
 #Anglo-Germanic
 neo_european_cultures = {
 	leader = european
-	is_overseas = no
+	#is_overseas = no
 	boer = {
 		color = {220 145 0}
 		first_names = { Sarel Rudolf Andries Hendrik Piet Racheltjie Dirkie Siener Koos Danie Christiaan Louis Petrus Paul Eugene Joubert
@@ -4888,7 +4910,7 @@ neo_european_cultures = {
 }
 french_american_cultures = {
 	leader = european
-	is_overseas = no
+	#is_overseas = no
 	french_canadian = { 
 		color = {168 195 255}
 		first_names = { Narcisse René Èdouard Luc Letellier Théodore Louis Francois Auguste Joseph Pierre Luis-Phillippe Jean Gaspard Eugéne Èssioff Huguel Jean-Pierre Gilles
@@ -4985,7 +5007,7 @@ french_american_cultures = {
 }
 latin_american_cultures = {
 	leader = southamerican
-	is_overseas = no
+	#is_overseas = no
 	unit = SouthAmericanGC
 	mexican = {
 		color = {51 117 62}
@@ -5105,7 +5127,7 @@ latin_american_cultures = {
 
 african_diaspora_cultures = {
 	leader = african
-	is_overseas = no
+	#is_overseas = no
 	unit = AfricanGC
 	afro_american = {
 		color = {42 42 42}
@@ -5319,7 +5341,7 @@ african_diaspora_cultures = {
 
 west_african = {
 	leader = african
-	is_overseas = no
+	#is_overseas = no
 	unit = AfricanGC
 	akan = {
 		color = {88 68 147}
@@ -5509,7 +5531,7 @@ west_african = {
 
 central_african = {
 	leader = african
-	is_overseas = no
+	#is_overseas = no
 	unit = AfricanGC
 	bakongo = {
 		color = {87 154 62}
@@ -5655,7 +5677,7 @@ central_african = {
 
 east_african = {
 	leader = african
-	is_overseas = no
+	#is_overseas = no
 	unit = AfricanGC
 	amhara = {
 		color = {88 142 37}
@@ -5933,7 +5955,7 @@ east_african = {
 
 southern_african = {
 	leader = african
-	is_overseas = no
+	#is_overseas = no
 	unit = ZuluGC
 	chewa = {
 		color = {88 88 88}
@@ -6078,5 +6100,18 @@ southern_african = {
 
 		last_names = { kaMpande kaMahole KaMdlela waMswati Buthelezei Khoza kaSihayo kaMvundlana kaZikhala kaMaphitha
 		}
+	}
+}
+
+larp = {
+	leader = nativeamerican
+	is_overseas = yes
+	unit = ZuluGC
+	larpers = {
+		color = { 255 52 192 }
+		first_names = { Jman MaTi Nurse General Zoomer Abe Doni Dr Queppe Lithium Atlas Komodo Hyper 
+		Chox Daniel Big_Marcock Gracchus }
+
+		last_names = { "Thunder 555" "5893" Townes Reno Flax Peterlejon Lincoln "Killer Fish" "Fishe au la Chocholate" Flan Potato }
 	}
 }

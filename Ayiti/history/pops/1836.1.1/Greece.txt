@@ -432,7 +432,7 @@
 	}
 	farmers = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 3000
 	}
 	farmers = {
@@ -467,7 +467,7 @@
 	}
 	farmers = {
 		culture = bulgarian
-		religion = bektashi
+		religion = sunni
 		size = 10000
 	}
 	farmers = {
@@ -509,7 +509,7 @@
 
 	farmers = {
 		culture = greek
-		religion = bektashi
+		religion = sunni
 		size = 8000
 	}
 
@@ -520,7 +520,7 @@
 	}
 	farmers = {
 		culture = turkish
-		religion = bektashi
+		religion = sunni
 		size = 3200
 	}
 
@@ -682,7 +682,7 @@
 	}
 	farmers = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 3210
 	}
 
@@ -693,7 +693,7 @@
 	}
 	clergymen = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 50
 	}
 
@@ -1474,7 +1474,7 @@
 	}
 	farmers = {
 		culture = albanian
-		religion = bektashi
+		religion = sunni
 		size = 400
 	}
 	farmers = {

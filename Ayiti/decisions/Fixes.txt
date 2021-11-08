@@ -23,7 +23,7 @@ political_decisions = {
     ai_call_ally = {
         picture = gtfo
         potential = {
-            NOT = { has_country_modifier = called_eic }
+            NOT = { has_country_modifier = cch.recent-call-to-arms }
             ai = yes
             war = yes
         }
@@ -33,7 +33,7 @@ political_decisions = {
             }
         }
         effect = {
-            add_country_modifier = { name = called_eic duration = 90 }
+            add_country_modifier = { name = cch.recent-call-to-arms duration = 90 }
            war = {               #No target initiates a one-day war that automatically resolves in a WP, but call_ally causes the new ally
                 attacker_goal = {  casus_belli = call_allies_cb  }
                 call_ally = yes
